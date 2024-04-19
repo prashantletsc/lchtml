@@ -1027,6 +1027,11 @@ p.sucess_message {
 
 /*responsive_code*/
 @media only screen and (max-width: 599px) and (min-width: 300px) {
+  .share_btn a {
+    width: 35px;
+    height: 35px;
+  }
+
   .emed_code_box {
     padding: 20px;
   }
