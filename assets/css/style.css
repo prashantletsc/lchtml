@@ -1027,7 +1027,9 @@ p.sucess_message {
 
 /*responsive_code*/
 @media only screen and (max-width: 599px) and (min-width: 300px) {
-
+  .emed_code_box {
+    padding: 20px;
+  }
   .location_user_detail_wrap a {
     width: 100%;
     display: inline-block;
