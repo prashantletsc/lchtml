@@ -1,9 +1,357 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<title>Let's Calendar Demo</title>
-    </head>
-    <body>
-<h2>This is Let's Calendar Design Environment</h2>
-    </body>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <section class="container mb_30">
+        <div class="top_header">
+            <div class="main_title">
+                <h1>Epic Moments Productions:
+                    Crafting Unforgettable Experiences
+                </h1>
+            </div>
+
+            <div class="top_time_wrap">
+                <div class="top_time_content">
+                    <div class="calender_icon_box">
+                        <img src="assets/img/calender.svg">
+                    </div>
+                    <div class="date_time_wrap">
+                        <div class="timebox">
+                            <h2>2:00 <span>PM</span></h2>
+                        </div>
+                        <div class="day_date_box">
+                            Sat, Dec 11
+                        </div>
+                    </div>
+                    <div class="time_arrow_box">
+                        <span><img src="assets/img/arrow.svg"></span>
+                    </div>
+                    <div class="date_time_wrap">
+                        <div class="timebox">
+                            <h2>2:00 <span>PM</span></h2>
+                        </div>
+                        <div class="day_date_box">
+                            Sat, Dec 11
+                        </div>
+                    </div>
+                </div>
+                <div class="timezone_wrap">
+                    <div class="timezone_box" style="display: none;">
+                        <i> <img src="assets/img/globe.svg"></i>
+                        <span>GMT 5:30 Kolkata</span>
+                    </div>
+                    <select id="SelExample" class="timezone_box" >
+                        <option value="0"><span class="tcode">(GMT+05:30)</span> Asia, Kolkata</option>
+                        <option value="1" selected="selected">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="2">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="3">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="4">GMT 5:30 Asia, Kolkata</option>
+
+                        <!-- <option value="1">Hyderabad</option>
+                        <option value="2">Vizag</option>
+                        <option value="3">Kochi</option>
+                        <option value="4">Anantapur</option>
+                        <option value="5">Dharmavaram</option>
+                        <option value="6">Bengaluru</option>
+                        <option value="7">Lucknow</option>
+                        <option value="8">Madurai</option> -->
+                      </select>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="event_banner_wrapper">
+            <div class="event_banner">
+                <img src="assets/img/event_banner.svg">
+            </div>
+            <div class="share_btn_box">
+                <div class="share_btn">
+                    <a href="#"><img src="assets/img/share.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main_content_wrapper">
+            <div class="content">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+            </div>
+
+            <div class="location_user_detail_wrap">
+                <a href="#">
+                    <i> <img src="assets/img/map.svg"></i>
+                    <span> www.google.com ( Venue )</span>
+                </a>
+                <a href="#">
+                    <i> <img src="assets/img/user.svg"></i>
+                    <span>Vishal Maske, icinfo@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <div class="add_calender_section ">
+            <h2>Add this to your Calendar</h2>
+            <p>Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
+                <p class="sucess_message">Thank you for participating </p>
+            <div class="add_calender_form">
+                <!-- <div class="fcontrol">
+                    <label class="input">
+                        <input class="input__field" type="text" placeholder=" " />
+                        <span class="input__label">Some Fancy Label</span>
+                      </label>
+                </div> -->
+
+                <div class="form_group">
+                    <div class="fcontrol">
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Name</span>
+                        </label>
+                    </div>
+                    <div class="fcontrol error_field">
+                        <label class="input ">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Email</span>
+                        </label>
+                        <span class="error_message"> Enter Email ID</span>
+                    </div>
+                    <!-- <div class="form_control">
+                              
+                                <input class="form_input">
+                                <label class="flable"> Full Name</label>
+                            </div> -->
+                    <!-- <div class="form_control">
+                               
+                                <input class="form_input">
+                                <label> Email</label>
+                            </div> -->
+                </div>
+                <div class="add_calender_btn_box">
+                    <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
+                </div>
+                <div class="logo_list">
+                    <div class="logo_list_box">
+                        <img src="assets/img/apple.svg">
+                    </div>
+                    <div class="logo_list_box">
+                        <img src="assets/img/google.svg">
+                    </div>
+                    <div class="logo_list_box">
+                        <img src="assets/img/offce_365.svg">
+                    </div>
+                    <div class="logo_list_box">
+                        <img src="assets/img/outlook.svg">
+                    </div>
+                    <div class="logo_list_box">
+                        <img src="assets/img/yahoo.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container prim_container">
+        <div class="prime_icon_box">
+            <img src="assets/img/primeicon.svg">
+        </div>
+        <div class="top_content text-center">
+            <h2>Add this to your Calendar</h2>
+            <p>Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
+        </div>
+
+        <div class="emed_code_box">
+            <div class="add_calender_btn_box add_slide_btn">
+                <button type="submit" class="add_btn"> 
+                    <i class="logoslides apple_i_slide"> <img src="assets/img/icons/apple.svg" /></i>
+                    <i class="logoslides"> <img src="assets/img/icons/google.svg" /></i> 
+                    <i class="logoslides office_i_slide"> <img src="assets/img/icons/office.svg" /></i> 
+                    <i class="logoslides outlook_i_slide"> <img src="assets/img/icons/outlook.svg" /></i> 
+                    <i class="logoslides"> <img src="assets/img/icons/yahoo.svg" /></i> 
+                    <span>Add to Calender </span>
+                </button>
+            </div>
+            <div class="powerdby_content">
+                <span> Powered by <b> Let's Calendar </b></span>
+            </div>
+            <div class="emed_btn_box">
+                <a class="componet_copy_btn emed_btn"><img src="assets/img/copy.svg" /></a>
+                <a class="code_copy_btn emed_btn"><img src="assets/img/code.svg" /></a>
+            </div>
+        </div>
+
+        <div class="top_content text-center pt_30">
+            <h2>Add to Calendar button <span class="normal_style"> (for websites, landing pages) </span></h2>
+            <p>Use the "Add to Calendar" button on websites and landing pages. Copy the button code below and add it
+                using custom HTML options in your website or landing page system.</p>
+        </div>
+
+        <div class="emed_code_box">
+            <div class="add_calender_section pt_0">
+                <div class="add_calender_form">
+                    <!-- <div class="fcontrol">
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Some Fancy Label</span>
+                          </label>
+                    </div> -->
+
+                    <div class="form_group">
+                        <div class="fcontrol">
+                            <label class="input">
+                                <input class="input__field" type="text" placeholder=" " />
+                                <span class="input__label">Name</span>
+                            </label>
+                        </div>
+                        <div class="fcontrol">
+                            <label class="input">
+                                <input class="input__field" type="text" placeholder=" " />
+                                <span class="input__label">Email</span>
+                            </label>
+                        </div>
+                        <!-- <div class="form_control">
+                                  
+                                    <input class="form_input">
+                                    <label class="flable"> Full Name</label>
+                                </div> -->
+                        <!-- <div class="form_control">
+                                   
+                                    <input class="form_input">
+                                    <label> Email</label>
+                                </div> -->
+                    </div>
+                    <div class="add_calender_btn_box">
+                        <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
+                    </div>
+                    <div class="logo_list">
+                        <div class="logo_list_box">
+                            <img src="assets/img/apple.svg">
+                        </div>
+                        <div class="logo_list_box">
+                            <img src="assets/img/google.svg">
+                        </div>
+                        <div class="logo_list_box">
+                            <img src="assets/img/offce_365.svg">
+                        </div>
+                        <div class="logo_list_box">
+                            <img src="assets/img/outlook.svg">
+                        </div>
+                        <div class="logo_list_box">
+                            <img src="assets/img/yahoo.svg">
+                        </div>
+                    </div>
+
+                    <div class="emed_btn_box">
+                        <a class="componet_copy_btn emed_btn"><img src="assets/img/copy.svg" /></a>
+                        <a class="code_copy_btn emed_btn" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/img/code.svg" /></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="powerdby_content fp_content">
+        <span> Powered by <b class="flogo_box"> <img src="assets/img/logo-letcalender.svg" /> </b></span>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        let timer;
+
+        document.addEventListener('input', e => {
+            const el = e.target;
+
+            if (el.matches('[data-color]')) {
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    document.documentElement.style.setProperty(``,);
+                }, 100)
+            }
+        })
+    </script>
+
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("logoslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+$(document).ready(function(){
+ 
+ // Initialize select2
+ $("#SelExample").select2();
+ $("#SelExample").select2("val", "4");
+$('#SelExample option:selected').text('Vizag');
+ // Read selected option
+ $('#but_read').click(function(){
+   var username = $('#SelExample option:selected').text();
+   var userid = $('#SelExample').val();
+
+   $('#result').text("id : " + userid + ", name : " + username);
+ });
+});
+        </script>
+</body>
+
 </html>
