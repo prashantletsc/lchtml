@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Lets Calender</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
 </head>
@@ -67,6 +66,12 @@
                         <option value="3">(GMT+05:30) Asia, Kolkata</option>
                         <option value="4">GMT 5:30 Asia, Kolkata</option>
 
+                        <option value="5">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="6">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="7">goa</option>
+
+
+
                         <!-- <option value="1">Hyderabad</option>
                         <option value="2">Vizag</option>
                         <option value="3">Kochi</option>
@@ -116,9 +121,9 @@
         </div>
         <div class="add_calender_section ">
             <h2>Add this to your Calendar</h2>
-            <p>Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
                 move the email to inbox and accept the same</p>
-                <p class="sucess_message">Thank you for participating </p>
+                <!-- <p class="sucess_message">Thank you for participating </p> -->
             <div class="add_calender_form">
                 <!-- <div class="fcontrol">
                     <label class="input">
@@ -183,7 +188,7 @@
         </div>
         <div class="top_content text-center">
             <h2>Add this to your Calendar</h2>
-            <p>Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
                 move the email to inbox and accept the same</p>
         </div>
 
@@ -203,14 +208,14 @@
             </div>
             <div class="emed_btn_box">
                 <a class="componet_copy_btn emed_btn"><img src="assets/img/copy.svg" /></a>
-                <a class="code_copy_btn emed_btn"><img src="assets/img/code.svg" /></a>
+                <a class="code_copy_btn emed_btn" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/img/code.svg" /></a>
             </div>
         </div>
 
         <div class="top_content text-center pt_30">
             <h2>Add to Calendar button <span class="normal_style"> (for websites, landing pages) </span></h2>
-            <p>Use the "Add to Calendar" button on websites and landing pages. Copy the button code below and add it
-                using custom HTML options in your website or landing page system.</p>
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
         </div>
 
         <div class="emed_code_box">
@@ -280,7 +285,7 @@
     </section>
 
     <div class="powerdby_content fp_content">
-        <span> Powered by <b class="flogo_box"> <img src="assets/img/logo-letcalender.svg" /> </b></span>
+        <span> Powered by <b class="flogo_box"> <img src="assets/img/logo-letcalender.svg" style="width: 120px;" /> </b></span>
     </div>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
@@ -334,7 +339,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 1000); // Change image every 2 seconds
 }
 
 $(document).ready(function(){

@@ -19,7 +19,7 @@
 .timebox h2{
 /* UI Properties */
 text-align: left;
-font: normal normal 600 34px / 46px Segoe UI;
+font: normal normal 600 34px / 46px Lato;
 letter-spacing: 0px;
 color: #000000;
 margin-bottom: 0;
@@ -28,14 +28,14 @@ margin-top: 0;
 .day_date_box{
     /* UI Properties */
 text-align: left;
-font: normal normal 600 18px/24px Segoe UI;
+font: normal normal 600 18px/24px Lato;
 letter-spacing: 0px;
 color: #999797;
 }
 .timebox h2 span{
 /* UI Properties */
 text-align: left;
-font: normal normal 600 18px/24px Segoe UI;
+font: normal normal 600 18px/24px Lato;
 letter-spacing: 0px;
 color: #7E7E7E;
 }
@@ -60,8 +60,12 @@ letter-spacing: 0px;
 color: #7E7E7E;
 font-size: 18px;
 text-decoration: none;
+font-size: 18px;
+transition: color 0.5s;
 }
-
+.location_user_detail_wrap a:hover {
+    color: #000;
+}
 body{
     font-family: "Lato", sans-serif;
 }
@@ -89,8 +93,8 @@ body{
 }
 .date_time_wrap {
     float: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 .time_arrow_box {
@@ -352,6 +356,7 @@ h2 {
     text-align: center;
     outline: 0;
     height: 36px;
+    font-size: 18px;
 }
 
 .input__field:not(:-moz-placeholder-shown) + .input__label {
@@ -884,18 +889,18 @@ span.error_message {
 p.sucess_message {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #dfffd0;
-    padding: 10px;
-    font-weight: 700;
+    padding: 6px;
     color: #262726;
     display: block;
     padding-left: 43px;
     padding-right: 43px;
     border-radius: 10px;
-    width: 210px;
+    width: auto;
     margin: auto;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
   :root,
 [data-bs-theme=light] {
@@ -964,7 +969,7 @@ p.sucess_message {
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Lato", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Lato Emoji", "Lato Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -1016,4 +1021,175 @@ p.sucess_message {
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
+}
+
+
+
+/*responsive_code*/
+@media only screen and (max-width: 599px) and (min-width: 300px) {
+
+  .location_user_detail_wrap a {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+  .location_user_detail_wrap {
+    display: inline-block;
+  }
+  section.container {
+    width: auto;
+    padding: 15px;
+  }
+  .main_title {
+    width: 100%;
+  }
+  .main_title h1 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .top_time_wrap {
+    width: 100%;
+  }
+  .date_time_wrap {
+    padding-left: 7px;
+    padding-right: 6px;
+  }
+  .timebox h2 {
+    font-size: 24px;
+  }
+  .day_date_box {
+    font-size: 14px;
+  }
+  .fcontrol {
+    width: 100%;
+  }
+  .form_group {
+    display: inline-block !important;
+    width: 100% !important;
+  }
+  .logo_list {
+    width: 100%;
+    display: inline-block;
+  }
+  .logo_list_box {
+    width: auto;
+    float: left;
+    height: 41px;
+  }
+
+}
+
+@media only screen and (max-width: 699px) and (min-width: 600px) {
+.main_title {
+  width: 100%;
+  float: left;
+}
+.top_time_wrap {
+  float: right;
+  width: 100%;
+  padding-top: 0;
+}
+.add_calender_form .form_group {
+  width: 100%;
+  display: inline-block;
+}
+
+}
+
+@media only screen and (max-width: 799px) and (min-width: 700px) {
+  .main_title {
+    width: 45%;
+    float: left;
+  }
+  .top_time_wrap {
+    float: right;
+    width: 45%;
+    padding-top: 0;
+  }
+  
+  }
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  section.container {
+    width: auto;
+  }
+  .fcontrol {
+    width: 100%;
+  }
+ 
+  
+  .main_title h1 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+ 
+  .date_time_wrap {
+    padding-left: 7px;
+    padding-right: 6px;
+  }
+  .timebox h2 {
+    font-size: 24px;
+  }
+  .day_date_box {
+    font-size: 14px;
+  }
+  .timezone_wrap {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 967px) and (min-width: 768px) {
+  .timezone_wrap {
+    width: auto;
+  }
+section.container {
+  width: auto;
+}
+
+.main_title {
+  width: 52%;
+  float: left;
+}
+.top_time_wrap {
+  float: right;
+  width: 47%;
+  padding-top: 0;
+}
+.main_title h1 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.date_time_wrap {
+  padding-left: 7px;
+  padding-right: 6px;
+}
+.timebox h2 {
+  font-size: 24px;
+}
+.day_date_box {
+  font-size: 14px;
+}
+
+
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 968px) {
+  .timezone_wrap {
+    width: auto;
+  }
+section.container {
+  width: auto;
+}
+
+.top_time_wrap {
+  float: right;
+  width: 37%;
+  padding-top: 0;
+}
+
+.main_title {
+  width: 59%;
+}
+
+
 }
