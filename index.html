@@ -92,7 +92,7 @@
             </div>
             <div class="share_btn_box">
                 <div class="share_btn">
-                    <a href="#"><img src="assets/img/share.svg"></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#sharemodal"><img src="assets/img/share.svg"></a>
                 </div>
             </div>
         </div>
@@ -161,19 +161,19 @@
                     <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
                 </div>
                 <div class="logo_list">
-                    <div class="logo_list_box">
+                    <div class="logo_list_box aplelist">
                         <img src="assets/img/apple.svg">
                     </div>
-                    <div class="logo_list_box">
+                    <div class="logo_list_box goglelogolist">
                         <img src="assets/img/google.svg">
                     </div>
-                    <div class="logo_list_box">
+                    <div class="logo_list_box officelogolist">
                         <img src="assets/img/offce_365.svg">
                     </div>
-                    <div class="logo_list_box">
+                    <div class="logo_list_box outllist">
                         <img src="assets/img/outlook.svg">
                     </div>
-                    <div class="logo_list_box">
+                    <div class="logo_list_box yglist">
                         <img src="assets/img/yahoo.svg">
                     </div>
                 </div>
@@ -188,8 +188,8 @@
         </div>
         <div class="top_content text-center">
             <h2>Add this to your Calendar</h2>
-            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
-                move the email to inbox and accept the same</p>
+            <!-- <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p> -->
         </div>
 
         <div class="emed_code_box">
@@ -214,11 +214,12 @@
 
         <div class="top_content text-center pt_30">
             <h2>Add to Calendar button <span class="normal_style"> (for websites, landing pages) </span></h2>
-            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
-                move the email to inbox and accept the same</p>
+          
         </div>
 
         <div class="emed_code_box">
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
             <div class="add_calender_section pt_0">
                 <div class="add_calender_form">
                     <!-- <div class="fcontrol">
@@ -256,25 +257,25 @@
                         <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
                     </div>
                     <div class="logo_list">
-                        <div class="logo_list_box">
+                        <div class="logo_list_box aplelist">
                             <img src="assets/img/apple.svg">
                         </div>
-                        <div class="logo_list_box">
+                        <div class="logo_list_box goglelogolist">
                             <img src="assets/img/google.svg">
                         </div>
-                        <div class="logo_list_box">
+                        <div class="logo_list_box officelogolist">
                             <img src="assets/img/offce_365.svg">
                         </div>
-                        <div class="logo_list_box">
+                        <div class="logo_list_box outllist">
                             <img src="assets/img/outlook.svg">
                         </div>
-                        <div class="logo_list_box">
+                        <div class="logo_list_box yglist">
                             <img src="assets/img/yahoo.svg">
                         </div>
                     </div>
 
                     <div class="emed_btn_box">
-                        <a class="componet_copy_btn emed_btn"><img src="assets/img/copy.svg" /></a>
+                        <a class="componet_copy_btn emed_btn" ><img src="assets/img/copy.svg" /></a>
                         <a class="code_copy_btn emed_btn" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/img/code.svg" /></a>
                     </div>
 
@@ -304,6 +305,56 @@
         <!-- Modal body -->
         <div class="modal-body">
           Modal body..
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="sharemodal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <!-- <div class="modal-header">
+          <h4 class="modal-title">Share Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div> -->
+        <!-- Modal body -->
+        <div class="modal-body">
+            <button type="button" class="btn-close mclose_btn" data-bs-dismiss="modal"></button>
+            <div class="share_title">
+                    <h2>Share my referral link with friends</h2>
+            </div>
+            <div class="share_content_wrap">
+                <b style="
+    display: none;
+">Share my referral link with friends</b>
+                <div class="shareicon_list">
+                    <ul>
+                        <li class="whatapp_icon">
+                            <img src="assets/img/share/whatsapp.svg">
+                        </li>
+                        <li class="insta_icon">
+                            <img src="assets/img/share/instagram.svg">
+                        </li>
+                        <li class="facebook_icon">
+                            <img src="assets/img/share/facebook.svg">
+                        </li>
+                        <li class="twitter_icon">
+                            <img src="assets/img/share/twitter.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="share_form">
+                    <!-- <input class="share_input" value="https://panel.letscalendar.com/campaign"/>
+                    <button type="submit" class="btn btn_share"> Copy Link </button> -->
+                    <input class="share_input" id="shareinput" value="https://panel.letscalendar.com/campaign">
+                    <button type="submit" class="btn btn_share" id="sharebtn"> Copy Link </button>
+                </div>
+
+
+
+
+            </div>
         </div>
       </div>
     </div>
@@ -344,6 +395,10 @@ function carousel() {
 
 $(document).ready(function(){
  
+
+
+
+
  // Initialize select2
  $("#SelExample").select2();
  $("#SelExample").select2("val", "4");
@@ -355,7 +410,30 @@ $('#SelExample option:selected').text('Vizag');
 
    $('#result').text("id : " + userid + ", name : " + username);
  });
+
+
+
+// $('#sharebtn').click(function(){ 
+//     $("#shareinput").toggleClass("share_input_active");
+//     $(this).e.innerHTML = "Copied!"
+//  });
+
+var n = document.querySelector("#shareinput")
+var e = document.querySelector("#sharebtn")
+
+document.getElementById("sharebtn").onclick = function() { 
+    //alert('')
+    navigator.clipboard.writeText(n.value);
+    var t = e.innerHTML; 
+    n.classList.add("share_input_active");
+    e.innerHTML = "Copied!" ,
+    setTimeout((function() {
+        e.innerHTML = t, n.classList.remove("share_input_active"), n.classList.remove("text-inverse-success")
+    }), 3e3)
+};  
+
 });
+
         </script>
 </body>
 
