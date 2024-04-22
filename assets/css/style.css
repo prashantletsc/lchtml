@@ -1049,13 +1049,18 @@ p.sucess_message {
   }
   .main_title {
     width: 100%;
+    text-align: center;
+    float: left;
   }
   .main_title h1 {
     font-size: 18px;
     line-height: 28px;
   }
+
   .top_time_wrap {
-    width: 100%;
+    width: 94%;
+    text-align: center;
+    margin: auto;
   }
   .date_time_wrap {
     padding-left: 7px;
