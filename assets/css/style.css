@@ -67,7 +67,7 @@ transition: color 0.5s;
     color: #000;
 }
 body{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif !important;
 }
 
 /**/
