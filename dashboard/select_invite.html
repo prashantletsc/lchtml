@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Include Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Include Bootstrap JS (Optional, for certain Bootstrap components) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+      <!-- Add these lines to the head section of your layout file -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css">
+      <!-- Add this line at the end of your layout file, just before the closing body tag -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PH2HKB0BG"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-0PH2HKB0BG');
+      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Calendar Invite</title>
+      <meta name="description" content="Let's Calendar | Mass Calendar Invite Sender">
+      <meta name="author" content="pixelcave">
+      <meta name="robots" content="noindex, nofollow">
+      <!-- CSRF Token -->
+      <meta name="csrf-token" content="uu9quIkj0wSqxxOF1VAMWzuSG4wkBtcE2s6R8cmn">
+      <!-- Open Graph Meta -->
+      <meta property="og:title" content="Mass Calendar Invite Sender">
+      <meta property="og:site_name" content="Let's Calendar">
+      <meta property="og:description" content="Hosting a Webinar or an Event? Instead of sending calendar invite to each of your attendees one-by-one, use Let's Calendar to send Mass Calendar Invites to your Attendees and get instant confirmations!">
+      <meta property="og:type" content="https://www.letscalendar.com/">
+      <meta property="og:url" content="https://www.letscalendar.com/">
+      <meta property="og:image" content="">
+      <!-- Icons -->
+      <link rel="shortcut icon" href="https://panel.letscalendar.com/media/favicons/favicon.png">
+      <link rel="icon" sizes="192x192" type="image/png" href="https://panel.letscalendar.com/media/favicons/favicon-192x192.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://panel.letscalendar.com/media/favicons/apple-touch-icon-180x180.png">
+      <!-- Fonts and Styles -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+      <link rel="stylesheet" id="css-main" href="https://panel.letscalendar.com/css/oneui.css">
+
+      
+      <link rel="stylesheet" id="css-main" href="https://panel.letscalendar.com/css/custom.css?v=1716462728">
+      <!-- You can include a specific file from public/css/themes/ folder to alter the default color theme of the template. eg: -->
+      <!-- <link rel="stylesheet" id="css-theme" href="https://panel.letscalendar.com/css/themes/amethyst.css"> -->
+      <!-- Scripts -->
+      <script>window.Laravel = {"csrfToken":"uu9quIkj0wSqxxOF1VAMWzuSG4wkBtcE2s6R8cmn"};</script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script type="text/javascript">
+         function lcAlertSuccess(msg) {
+             Swal.fire({
+                 icon: "success",
+                 title: "",
+                 html: msg,
+             });
+         }
+         
+         function lcAlertError(msg) {
+             Swal.fire({
+                 icon: "error",
+                 title: "Oops...",
+                 html: msg,
+             });
+         }
+         
+         function lcAlertInfo(msg) {
+             Swal.fire({
+                 icon: "info",
+                 title: "Info",
+                 html: msg,
+             });
+         }
+         
+         function lcAlertWarning(msg) {
+             Swal.fire({
+                 icon: "warning",
+                 title: "Alert",
+                 html: msg,
+             });
+         }
+      </script>
+      <link rel="stylesheet" id="css-main" href="assets/css/custom_design.css">
+   </head>
+   <body>
+      <div id="page-container1" class=" page-header-fixed w-100" style="position: fixed; z-index:999">
+      </div>
+      <div id="page-container" class="sidebar-o enable-page-overlay sidebar-dark side-scroll page-header-fixed">
+         <!-- Side Overlay-->
+         <aside id="side-overlay" class="font-size-sm">
+            <!-- Side Header -->
+            <div class="content-header border-bottom">
+               <!-- User Avatar -->
+               <a class="img-link mr-1" href="javascript:void(0)">
+               <img class="img-avatar img-avatar32" src="https://panel.letscalendar.com/media/avatars/avatar10.jpg" alt="">
+               </a>
+               <!-- END User Avatar -->
+               <!-- User Info -->
+               <div class="ml-2">
+                  <a class="link-fx text-dark font-w600" href="javascript:void(0)">Adam McCoy</a>
+               </div>
+               <!-- END User Info -->
+               <!-- Close Side Overlay -->
+               <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+               <a class="ml-auto btn btn-sm btn-dual" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+               <i class="fa fa-fw fa-times text-danger"></i>
+               </a>
+               <!-- END Close Side Overlay -->
+            </div>
+            <!-- END Side Header -->
+            <!-- Side Content -->
+            <div class="content-side">
+               <p>
+                  Content..
+               </p>
+            </div>
+            <!-- END Side Content -->
+         </aside>
+         <!-- END Side Overlay -->
+         <nav id="sidebar" aria-label="Main Navigation" class="" style="">
+            <!-- Side Header -->
+            <div class="content-header bg-white">
+               <!-- Logo -->
+               <a class="font-w600 text-dual bg-white-5" href="https://panel.letscalendar.com/dashboard">
+                  <!-- <i class="fa fa-circle-notch text-primary"></i> -->
+                  <span class="smini-hide">
+                  <span class="font-w700 font-size-h5 ">
+                  <img style="width:150px;height:50px" src="https://panel.letscalendar.com/media/favicons/logo.png">
+                  </span>
+                  </span>
+               </a>
+               <!-- END Logo -->
+               <!-- Options -->
+               <div>
+                  <!-- Close Sidebar, Visible only on mobile screens -->
+                  <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                  <a class="d-lg-none text-dual ml-3" data-toggle="layout" data-action="sidebar_close"
+                     href="javascript:void(0)">
+                  <i class="fa fa-times"></i>
+                  </a>
+                  <!-- END Close Sidebar -->
+               </div>
+               <!-- END Options -->
+            </div>
+            <!-- END Side Header -->
+            <!-- Side Navigation -->
+            <div class="content-side content-side-full">
+               <ul class="nav-main">
+                  <li class="nav-main-item">
+                     <a class="nav-main-link nav-main-primary "
+                        href="https://panel.letscalendar.com/campaign">
+                     <i class="nav-main-link-icon fa fa-plus"></i>
+                     <span class="nav-main-link-name"><strong>New Campaign</strong></span>
+                     </a>
+                  </li>
+                  <li class="nav-main-heading">Navigation</li>
+                  <li class="nav-main-item">
+                     <a class="nav-main-link " href="https://panel.letscalendar.com/dashboard">
+                     <i class="nav-main-link-icon si si-cursor"></i>
+                     <span class="nav-main-link-name"><strong>Dashboard</strong></span>
+                     </a>
+                  </li>
+                  <li class="nav-main-item">
+                     <a class="nav-main-link" href="https://panel.letscalendar.com/calendar">
+                     <i class="nav-main-link-icon far fa-calendar"></i>
+                     <span class="nav-main-link-name"><strong>View Calendar</strong></span>
+                     </a>
+                  </li>
+                  <li class="nav-main-item">
+                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="true" href="#">
+                     <i class="nav-main-link-icon fa fa-address-book"></i>
+                     <span class="nav-main-link-name"><strong>Campaigns</strong></span>
+                     </a>
+                     <ul class="nav-main-submenu">
+                        <li class="nav-main-item">
+                           <a class="nav-main-link active" href="https://panel.letscalendar.com/camplist">
+                           <span class="nav-main-link-name">Campaign List</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/campaign">
+                           <span class="nav-main-link-name">Create Campaign</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/uploadCamp">
+                           <span class="nav-main-link-name">Upload Campaign</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/attendee">
+                           <span class="nav-main-link-name">Upload Attendees</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item d-none">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/campinvite">
+                           <span class="nav-main-link-name">Send Invite</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item d-none">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/campinvitetest">
+                           <span class="nav-main-link-name">Send Invite Web Api</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/invitelogs">
+                           <span class="nav-main-link-name">Invite Logs</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/unsubscriber">
+                           <span class="nav-main-link-name">Unsubscribers List</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-main-item ">
+                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="true" href="#">
+                     <i class="nav-main-link-icon fa fa-book-open"></i>
+                     <span class="nav-main-link-name"><strong>Setting</strong></span>
+                     </a>
+                     <ul class="nav-main-submenu">
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="/profile#org_test">
+                           <span class="nav-main-link-name">Organisation</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/smtp">
+                           <span class="nav-main-link-name">Email Config</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item d-none">
+                           <a class="nav-main-link" href="https://panel.letscalendar.com/webapi">
+                           <span class="nav-main-link-name">Web Api Config</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link" href="https://panel.letscalendar.com/domainemail">
+                           <span class="nav-main-link-name">Sender Email</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/zoom">
+                           <span class="nav-main-link-name">Zoom Integration</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/subuser">
+                           <span class="nav-main-link-name">Add Sub User</span>
+                           </a>
+                        </li>
+                        <li class="nav-main-item">
+                           <a class="nav-main-link " href="https://panel.letscalendar.com/downloadrequest">
+                           <span class="nav-main-link-name">Download Request</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- <li class="nav-main-heading">More</li> -->
+                  <li class="nav-main-item">
+                     <a class="nav-main-link" target="_blank" href="https://letscalendar.freshdesk.com/support/home">
+                     <i class="nav-main-link-icon si si-globe"></i>
+                     <span class="nav-main-link-name"><strong>Help</strong></span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <!-- END Side Navigation -->
+         </nav>
+         <!-- END Sidebar -->
+         <!-- Header -->
+         <header id="page-header" style="">
+            <!-- Header Content -->
+            <div class="content-header">
+               <!-- Left Section -->
+               <div class="d-flex align-items-center">
+                  <!-- Toggle Sidebar -->
+                  <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                  <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+                  <i class="fa fa-fw fa-bars"></i>
+                  </button>
+                  <!-- END Toggle Sidebar -->
+                  <!-- Toggle Mini Sidebar -->
+                  <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                  <button type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block" data-toggle="layout" data-action="sidebar_mini_toggle">
+                  <i class="fa fa-fw fa-ellipsis-v"></i>
+                  </button>
+                  <!-- END Toggle Mini Sidebar -->
+               </div>
+               <!-- END Left Section -->
+               <!-- Right Section -->
+               <div class="d-flex align-items-center">
+                  <!-- User Dropdown -->
+                  <div class="dropdown d-inline-block ml-2">
+                     <a href="https://panel.letscalendar.com/stripe" class="dt-button buttons-print btn btn-sm btn-success">
+                     <span class="d-none d-sm-inline-block ml-1">Upgrade Plan</span>
+                     </a>
+                     <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img class="rounded" src="https://panel.letscalendar.com/media/avatars/avatar10.jpg" alt="Header Avatar" style="width: 18px;">
+                     <span class="d-none d-sm-inline-block ml-1">Creative Leaf</span>
+                     <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-user-dropdown">
+                        <div class="p-3 text-center bg-primary">
+                           <img class="img-avatar img-avatar48 img-avatar-thumb" src="https://panel.letscalendar.com/media/avatars/avatar10.jpg" alt="">
+                        </div>
+                        <div class="p-2">
+                           <a class="dropdown-item d-none d-flex align-items-center justify-content-between" href="https://panel.letscalendar.com/stripe">
+                           <span class="btn btn-success">Upgrade to Paid Plan</span>
+                           </a>
+                           <span class="dropdown-item align-items-center justify-content-between"> <strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c5b494e48495f454b425b435e47484941436c4b414d4540024f4341">[email&#160;protected]</a> </strong></span>
+                           <a class="dropdown-item d-flex align-items-center justify-content-between"
+                              href="https://panel.letscalendar.com/profile">
+                           <span><strong>Account</strong></span>
+                           <i class="fa fa-user-circle" aria-hidden="true"></i>
+                           </a>
+                           <a class="dropdown-item d-flex align-items-center justify-content-between" href="https://panel.letscalendar.com/logout">
+                           <span><strong>Log Out</strong></span>
+                           <i class="si si-logout ml-1"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END User Dropdown -->
+               </div>
+               <!-- END Right Section -->
+            </div>
+            <!-- END Header Content -->
+         </header>
+         <!-- END Header -->
+         <!-- Main Container -->
+         <main id="main-container" style="">
+            <!-- Page Content -->
+            <div class="content">
+               <!-- <div class="content"> -->
+               <!-- Dynamic Table with Export Buttons -->
+               <div class="block">
+                  <div class="content_wrap">
+                     <div class="create_campaign_wrap">
+                        <div class="create_content_box">
+                           <div class="create_main_title">
+                              Try our all new Environment with
+                              Pro Plan for free
+                           </div>
+                           <p>Keep subscribers enagaged by sharing your latest news, promoting your
+                              bestselling products, or annoucing an upcoming event.
+                           </p>
+                        </div>
+                        <div class="select_event_content_wrap">
+                           <div class="se_content_box">
+                              <div class="se_icon_box">
+                                 <img src="assets/images/new/calendar.svg" />
+                              </div>
+                              <div class="se_content">
+                                 <b>Calendar Invite</b>
+                                 <span>If you need more info please check it out</span>
+                              </div>
+                           </div>
+                           <div class="se_content_box">
+                              <div class="se_icon_box">
+                                 <img src="assets/images/new/calendar.svg" />
+                              </div>
+                              <div class="se_content">
+                                 <b>Email Invite</b>
+                                 <span>If you need more info please check it out</span>
+                              </div>
+                           </div>
+                        </div>
+                       
+                        <button type="button" class="btn btn-alt-primary push" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter">Launch Modal</button>
+                        <div class="cam_image">
+                           <img src="create_cam.svg">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <style>
+            </style>
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+               $(function () {
+               $(".tooltip-enabled").tooltip();
+               })
+               function deleteCampaign(json) {
+                 document.getElementById("campdeleteid").value = json.c_id;
+                 document.getElementById("title").innerHTML = "Campaign Title: - " + json.c_name;
+               }
+               
+               document.addEventListener('DOMContentLoaded', function () {
+                   var searchInput = document.getElementById('search');
+                   var clearSearchButton = document.getElementById('clearSearch');
+                   var searchForm = document.getElementById('searchForm');
+               
+                   // // Show/hide clear button based on search input
+                   // searchInput.addEventListener('input', function () {
+                   //     clearSearchButton.style.display = this.value !== '' ? 'block' : 'none';
+                   // });
+               
+                   // Clear search input and submit form when clear button is clicked
+                   clearSearchButton.addEventListener('click', function () {
+                       searchInput.value = ''; // Clear the search input
+                       searchForm.submit();    // Submit the form
+                   });
+               });
+               
+            </script>
+         </main>
+         <!-- END Main Container -->
+      </div>
+
+      <div class="modal" id="modal-block-vcenter" tabindex="-1" role="dialog" aria-labelledby="modal-block-vcenter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+              <div class="block block-rounded block-transparent mb-0">
+                 <div class="block-header block-header-default modal_title">
+                    <h3 class="block-title">
+                       <span>Create an email campaign</span>
+                       <span class="edit_icon_btn"> <img src="assets/images/new/edit.png" /></span>
+                    </h3>
+                    <div class="modal_btn_list">
+                        <div class="mbtn_box">
+                            <a href="#" class="msave_btn"> <i><img src="assets/images/new/save.png"/> </i> <span>Save</span></a>
+                            <a href="#"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
+                        </div>
+                </div>
+                    <div class="block-options">
+                       <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                       <i class="close_icon">
+                       <img src="assets/images/new/close.png" />
+                       </i>
+                       </button>
+                    </div>
+                 </div>
+                 <div class="block-content fs-sm">
+                    <div class="tab_wrapper">
+                       <div class="side_tab tabs">
+                          <div class="tab_list tab-link current" data-tab="tab-1">
+                             <div class="tab_number">
+                                <span>1</span>
+                             </div>
+                             <div class="tab_list_content">
+                                <h3 class="stepper-title">Sender Details</h3>
+                                <span>Setup Your Account Details</span>
+                             </div>
+                          </div>
+                          <div class="tab_list tab-link" data-tab="tab-2">
+                             <div class="tab_number">
+                                <span>2</span>
+                             </div>
+                             <div class="tab_list_content">
+                                <h3 class="stepper-title">Recipients Details</h3>
+                                <span>Setup Your Account Details</span>
+                             </div>
+                          </div>
+                          <div class="tab_list tab-link"  data-tab="tab-3">
+                             <div class="tab_number">
+                                <span>3</span>
+                             </div>
+                             <div class="tab_list_content">
+                                <h3 class="stepper-title">Campaign Subject</h3>
+                                <span>Setup Your Account Details</span>
+                             </div>
+                          </div>
+                          <div class="tab_list tab-link"  data-tab="tab-4">
+                             <div class="tab_number">
+                                <span>4</span>
+                             </div>
+                             <div class="tab_list_content">
+                                <h3 class="stepper-title">Campaign Design</h3>
+                                <span>Setup Your Account Details</span>
+                             </div>
+                          </div>
+                          <div class="tab_list tab-link"  data-tab="tab-5">
+                             <div class="tab_number">
+                                <span>5</span>
+                             </div>
+                             <div class="tab_list_content">
+                                <h3 class="stepper-title">Send or schedule</h3>
+                                <span>Setup Your Account Details</span>
+                             </div>
+                          </div>
+                       </div>
+                       <style>
+                        .tab-content{
+			display: none;
+		}
+
+		.tab-content.current{
+			display: flex;
+		}
+                       </style>
+                       <div id="tab-1" class="tab_content tabcontent_box tab-content current">
+                        <div class="tab_f_content">
+                            <div class="tab_top_title">Who is sending this email campaign?</div>
+                            <form>
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Email</label>
+                                  <div class="inputgroup">
+                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Emai Input">
+                                     <a href="#">
+                                     <span></span>
+                                     </a>
+                                  </div>
+                               </div>
+                               <div class="form_control_box">
+                                  <div class="form_btn_box">
+                                     <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                     <a href="#" class="frm_btn save_btn">SAVE</a>
+                                  </div>
+                               </div>
+                            </form>
+                         </div>
+                          <div class="message_box_wrap">
+                            <div class="message_box_conentwrap">
+                                <b class="mtop_title"> INBOX</b>
+                              <div class="message_content_box">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box  message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="message_popup_box">
+                                <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                            </div>
+                           </div>
+
+                          
+                       </div>
+                       <div id="tab-2" class="tab_content tabcontent_box tab-content ">
+                        <div class="tab_f_content_full">
+                            <div class="tab_top_title">Who is sending this email campaign? 2</div>
+                            <form>
+                              <div class="w_50">
+                                  <div class="form_control_box">
+                                      <label class="form-label" for="example-email-input">Attendees Upload</label>
+                                      <div class="inputgroups">
+                                         <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="choose attendee file">
+                                         
+                                      </div>
+
+                                      <div class="download_btn">
+                                          <a href="#">
+                                              <span>Download Sample File</span>
+                                              <i><img src="download.png"></i>
+                                          </a>
+                                      </div>
+                                   </div>
+                                   <div class="form_control_box fchebox">
+                                    <div class="form-check form-check-inline">
+                                       <input class="form-check-input" type="checkbox" value="" id="example-checkbox-inline1" name="example-checkbox-inline1" checked>
+                                       <span>Allow Duplicate or Update Existing Attendees Details</span>
+                                     </div>
+                                             
+
+                                             <p>note: you can upload 100,000 contacts in one file and file format in .csv, .xlsx, .xls</p>
+                                     </div>    
+
+
+                              </div>
+                              <div class="or_divide_box">
+                                    <span>OR</span>
+                              </div>
+                              <div class="w_50 w0">
+                                  <div class="form_control_box">
+                                      <label class="form-label" for="example-email-input">Send to previous campaign</label>
+                                      <div class="inputgroups">
+                                       <select class="form-select" id="example-select" name="example-select">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">Option #1</option>
+                                          <option value="2">Option #2</option>
+                                          <option value="3">Option #3</option>
+                                          <option value="4">Option #4</option>
+                                          <option value="5">Option #5</option>
+                                          <option value="6">Option #6</option>
+                                          <option value="7">Option #7</option>
+                                          <option value="8">Option #8</option>
+                                          <option value="9">Option #9</option>
+                                          <option value="10">Option #10</option>
+                                        </select>
+<!--                                         
+                                         <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="select campaign">
+                                          -->
+                                      </div>
+
+                                      
+                                   </div>
+
+                                   <div class="form_control_box">
+                                      <div class="radiobox_wrap">
+                                       <div class="mb-4">
+                                          <label class="form-label">Select Action</label>
+                                          <div class="space-x-2">
+                                            <div class="fgroubox">
+                                              <input class="form-check-input" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1" checked="">
+                                              <label class="form-check-label-new" for="example-radios-inline1">All</label>
+                                            </div>
+                                            <div class="fgroubox">
+                                             <input class="form-check-input" type="radio" id="example-radios-inline2" name="example-radios-inline" value="option2" checked="">
+                                             <label class="form-check-label-new" for="example-radios-inline1">open</label>
+                                           </div>
+                                           <div class="fgroubox">
+                                             <input class="form-check-input" type="radio" id="example-radios-inline3" name="example-radios-inline" value="option3" checked="">
+                                             <label class="form-check-label-new" for="example-radios-inline1">not open</label>
+                                           </div>
+
+                                           <div class="fgroubox">
+                                             <input class="form-check-input" type="radio" id="example-radios-inline4" name="example-radios-inline" value="option4" checked="">
+                                             <label class="form-check-label-new" for="example-radios-inline1">click</label>
+                                           </div>
+
+                                           <div class="fgroubox">
+                                             <input class="form-check-input" type="radio" id="example-radios-inline5" name="example-radios-inline" value="option5" checked="">
+                                             <label class="form-check-label-new" for="example-radios-inline1">not click</label>
+                                           </div>
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      
+                                   </div>
+                                       
+
+
+                              </div>
+
+                              <div class="import_app_wrap">
+                                 <b class="import_title">import attendees form your 3rd party apps</b>
+                                 <div class="import_logo_box">
+                                     <div class="import_logo_wrap">
+                                          <div class="ibox_logo"><img src="pabbly.png"></div>
+                                          <div class="ibox_logo"><img src="zoom.png"></div>
+                                          <div class="ibox_logo"><img src="zapier.png"></div>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                              <div class="form_control_box fbtn_box_wrap">
+                                      <div class="form_btn_box">
+                                         <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                         <a href="#" class="frm_btn save_btn">SAVE</a>
+                                      </div>
+                                   </div>
+                          </form>
+                         </div>
+
+                         
+
+                       </div>
+                       <div id="tab-3" class="tab_content tabcontent_box tab-content">
+                        <div class="tab_f_content">
+                            <div class="tab_top_title">Add a subject line for this campaign.</div>
+                            <form>
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Subject line</label>
+                                  <div class="inputgroups">
+                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Emai Input">
+                                     
+                                  </div>
+                               </div>
+                               <div class="form_control_box">
+                                  <div class="form_btn_box">
+                                     <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                     <a href="#" class="frm_btn save_btn">SAVE</a>
+                                  </div>
+                               </div>
+                            </form>
+                         </div>
+                          <div class="message_box_wrap">
+                            <div class="message_box_conentwrap">
+                                <b class="mtop_title"> INBOX</b>
+                              <div class="message_content_box">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box  message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="message_popup_box">
+                                <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                            </div>
+                           </div>
+
+                          
+                       </div>
+
+                       <div id="tab-4" class="tab_content tabcontent_box tab-content">
+                        <div class="tab_f_content">
+                           <!-- <div class="tab_top_title">Code your own</div> -->
+                           
+                           
+
+                           <div class="html_code_wrap">
+                             <div class="html_code_content_box hc_box_width">
+                                <div class="htmlcicon">
+                                   <img src="assets/images/new/code.png">
+                                </div>
+                                <div class="htmlcodecontent">
+                                   <b>HTML Editor</b>
+                                   <p>Copy and paste your HTML code.</p>
+                                </div>
+                                <div class="htmlc_btn_box">
+                                   <a href="#">Use HTML Editor</a>
+                                </div>
+                             </div>
+
+                             <div class="html_code_content_box hc_box_width">
+                                <div class="htmlcicon">
+                                   <img src="assets/images/new/code.png">
+                                </div>
+                                <div class="htmlcodecontent">
+                                   <b>Rich Text Editor</b>
+                                   <p>Use the rich text editor to create simple emails</p>
+                                </div>
+                                <div class="htmlc_btn_box">
+                                   <a href="#">Use HTML Editor</a>
+                                </div>
+                             </div>
+
+
+                           </div>
+                           <form>
+                              <div class="form_control_box">
+                                 <div class="form_btn_box">
+                                    <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                    <a href="#" class="frm_btn save_btn">SAVE</a>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                          <div class="message_box_wrap">
+                            <div class="message_box_conentwrap">
+                                <b class="mtop_title"> INBOX</b>
+                              <div class="message_content_box">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box  message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="message_popup_box">
+                                <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                            </div>
+                           </div>
+
+                          
+                       </div>
+                       <div id="tab-5" class="tab_content tabcontent_box tab-content">
+                        <div class="tab_f_content">
+                           <div class="tab_top_title title_bold">Send test email</div>
+
+                           <div class="send_code_wrap">
+                              <div class="send_code_content_box hc_box_width_45">
+                                 <div class="htmlc_rbtn">
+                                        <input class="form-check-input" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+                                        
+                                 </div>
+                                 <div class="sendcodecontent">
+                                    <b>Send Now</b>
+                                    <p>Copy and paste your HTML code.</p>
+                                 </div>
+                              </div><div class="send_code_content_box hc_box_width_45">
+                                 <div class="htmlc_rbtn">
+                                        <input class="form-check-input" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+                                        
+                                 </div>
+                                 <div class="sendcodecontent">
+                                    <b>Schedule for later</b>
+                                    <p>Copy and paste your HTML code.</p>
+                                 </div>
+                              </div>
+ 
+                              
+ 
+ 
+                            </div>
+                           <form>
+                              <div class="form_control_box">
+                                 <div class="form_btn_box">
+                                    <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                    <a href="#" class="frm_btn save_btn">SAVE</a>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                          <div class="message_box_wrap">
+                            <div class="message_box_conentwrap">
+                                <b class="mtop_title"> INBOX</b>
+                              <div class="message_content_box">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="message_content_box  message_blur">
+                                 <div class="message_user_namebox"><span>C</span></div>
+                                 <div class="message_content">
+                                    <div class="messagec_box">
+                                       <h3>Let's Calender</h3>
+                                       <b>Message subject...</b>
+                                       <p>Your preview text</p>
+                                       <div class="message_time">
+                                          <span>05:20 PM</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                            <div class="message_popup_box">
+                                <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                            </div>
+                           </div>
+
+                          
+                       </div>
+
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
+      <!-- END Page Container -->
+      <!-- OneUI Core JS -->
+      <script src="https://panel.letscalendar.com/js/oneui.app.js"></script>
+      <!-- Laravel Scaffolding JS -->
+      <script src="https://panel.letscalendar.com/js/laravel.app.js"></script>
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+         window.Tawk_API = window.Tawk_API || {};
+         window.Tawk_API.visitor = {
+             name: "Creative Leaf", // Full name
+             email: "webdesignworkdemo@gmail.com", // Email address
+             hash: '73617389b22d3bfee27a37206933fd3ad070def2973b38c95ec21dafea8d1cc1'
+         };
+         
+         var Tawk_LoadStart=new Date();
+         (function(){
+             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+             s1.async=true;
+             s1.src='https://embed.tawk.to/5ff43780c31c9117cb6b948f/1fs1b1mr8';
+             s1.charset='UTF-8';
+             s1.setAttribute('crossorigin','*');
+             s0.parentNode.insertBefore(s1,s0);
+         })();
+         
+      </script>
+      <!--End of Tawk.to Script-->
+      <!-- Frill Widget (https://frill.co) -->
+      <script>
+         window.Frill_Config = window.Frill_Config || [];
+         window.Frill_Config.push({ key: '1747c128-6164-41f9-a835-a00e53310211' });
+      </script>
+      <script async src="https://widget.frill.co/v2/widget.js"></script>
+      <!-- End Frill Widget -->
+      <script>
+         (function(apiKey){
+             (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+             v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+                 o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                 y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+                 z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+         
+                                     // Call this whenever information about your visitors becomes available
+                 // Please use Strings, Numbers, or Bools for value types.
+                 pendo.initialize({
+                     visitor: {
+                         id: "1518",
+                         email: "webdesignworkdemo@gmail.com",
+                         full_name: "Creative",
+                         registrationDate: "2024-03-27 14:54:04"
+                     },
+         
+                     account: {
+                         id: "org_3Iwxy6cy9K",
+                         name: "Creative",
+                         is_paying: "Trail",
+                         monthly_value: "0"
+                     }
+                 });
+         })('e70ae0bc-83be-4f35-4fdf-4a8424d8777c');
+         
+      </script>
+      <script type = "text/javascript">
+         (function(c, l, a, r, i, t, y) {
+             c[a] = c[a] || function() {
+                 (c[a].q = c[a].q || []).push(arguments)
+             };
+             t = l.createElement(r);
+             t.async = 1;
+             t.src = "https://www.clarity.ms/tag/" + i;
+             y = l.getElementsByTagName(r)[0];
+             y.parentNode.insertBefore(t, y);
+         })(window, document, "clarity", "script", "b93mc8ebhy"); 
+         
+      </script>
+      <!-- Page JS Code -->
+      <script src="https://panel.letscalendar.com/js/pages/be_tables_datatables.min.js"></script>
+      <!-- Page JS Plugins -->
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/jquery.dataTables.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/buttons/buttons.print.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+      <script>
+
+$(document).ready(function(){
+//	alert('hasan')
+	$('.tab-link').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.tab-link').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+
+         $(document).ready(function(){
+             $(".btn-info").click(function(){
+               $("#modalInfo").modal("show");
+             })
+             $(".btn.closeModal").click(function(){
+                   //$("#editApi").modal("hide"); 
+                   $(this).parents(".modal").modal("hide")
+               })
+               $(".modal .description-detail .view-more").click(function(){
+                 $(this).parents(".modal").find(".description-detail").removeClass("short");
+                 $(this).hide();
+               })
+           })
+         
+           function details(json){
+             document.getElementById("cName").innerHTML = json.c_name;
+             document.getElementById("c_uId").innerHTML = json.c_unique_id;
+             document.getElementById("cSubject").innerHTML = json.c_subject;
+             document.getElementById("c_create_date").innerHTML = json.c_created_on;
+             document.getElementById("c_startDate").innerHTML = json.c_startdatetime;
+             document.getElementById("c_endDate").innerHTML = json.c_enddatetime;
+             if(json.c_status === 'A'){
+               document.getElementById("c_status").innerHTML = 'Active';
+             }else if(json.c_archived){
+               document.getElementById("c_status").innerHTML = 'Archived';
+             }else if(json.c_status == 'D'){
+               document.getElementById("c_status").innerHTML = 'Deleted';
+             }
+             document.getElementById("c_deEmail").innerHTML = json.de_email;
+             document.getElementById("c_type").innerHTML = (json.c_type == 'online'?'Webinar':json.c_type);
+             document.getElementById("cDesc").innerHTML = json.c_description;
+             document.getElementById("c_body").innerHTML = json.c_content;
+             $('#modalInfo').modal('show');
+           }
+         
+           function copyUniqueId(uniqueId) {
+               // Create a temporary input element
+               var tempInput = document.createElement("input");
+               tempInput.value = uniqueId;
+               document.body.appendChild(tempInput);
+               tempInput.select();
+               document.execCommand("copy");
+         
+               document.body.removeChild(tempInput);
+         
+               var alertDiv = document.createElement("div");
+               alertDiv.textContent = "Campaign Id Copied";
+               alertDiv.style.position = "fixed";
+               alertDiv.style.top = "4rem";
+               alertDiv.style.left = "50%";
+               alertDiv.style.transform = "translateX(-50%)";
+               alertDiv.style.backgroundColor = "#f0f0f0";
+               alertDiv.style.padding = "10px";
+               alertDiv.style.borderRadius = "5px";
+               alertDiv.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
+               document.body.appendChild(alertDiv);
+         
+               // Automatically dismiss the alert after 2 seconds
+               setTimeout(function() {
+                   alertDiv.style.display = "none";
+               }, 2000);
+           }
+           function redirectToPublicPage(uniqId){
+             $.ajax({
+                   url: SiteUrl+'/create-public-page',
+                   type: "POST",
+                   data: {
+                       campaign: uniqId,
+                       _token: "uu9quIkj0wSqxxOF1VAMWzuSG4wkBtcE2s6R8cmn"
+                   },
+                   dataType: "json",
+                   error: function (error) {
+                     console.log(JSON.parse(error.responseText).error);
+                     let err = '<div>';
+                         $.each(JSON.parse(error.responseText).error, function (ind, val) {
+                           err += '<p>'+val+'</p>';
+                         });
+                     err += '</div>';
+                     lcAlertError(err);
+                   },
+                   success: function (data) {
+                     console.log(data);
+                     window.open("https://panel.letscalendar.com/campaign/"+data.page_id,'_blank');
+                     // window.location.href = "https://panel.letscalendar.com/campaign/"+data.page_id;
+                   }
+                 });
+           }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/moment.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js"></script>
+      <script src="https://panel.letscalendar.com/js/plugins/summernote/summernote-bs4.min.js"></script>
+      <script>const SiteUrl = "https://panel.letscalendar.com";</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script>
+         function submitManageBilling(){
+             $('#mngBilling').submit();
+         }
+      </script>
+      <script>
+         po('customers',
+             'signup', {
+                 data: {
+                     key: 'customer_id',
+                     name: 'Creative Leaf',
+                     email: 'webdesignworkdemo@gmail.com'
+                 }
+             }
+         );
+
+     
+
+      </script>
+   </body>
+</html>

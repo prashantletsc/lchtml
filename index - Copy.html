@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lets Calender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <section class="container mb_30">
+        <div class="top_header">
+            <div class="main_title">
+                <h1>Epic Moments Productions:
+                    Crafting Unforgettable Experiences
+                </h1>
+            </div>
+
+            <div class="top_time_wrap">
+                <div class="top_time_content">
+                    <div class="calender_icon_box">
+                        <img src="assets/img/calender.svg">
+                    </div>
+                    <div class="date_time_wrap">
+                        <div class="timebox">
+                            <h2>2:00 <span>PM</span></h2>
+                        </div>
+                        <div class="day_date_box">
+                            Sat, Dec 11
+                        </div>
+                    </div>
+                    <div class="time_arrow_box">
+                        <span><img src="assets/img/arrow.svg"></span>
+                    </div>
+                    <div class="date_time_wrap">
+                        <div class="timebox">
+                            <h2>2:00 <span>PM</span></h2>
+                        </div>
+                        <div class="day_date_box">
+                            Sat, Dec 11
+                        </div>
+                    </div>
+                </div>
+                <div class="timezone_wrap">
+                    <div class="timezone_box" style="display: none;">
+                        <i> <img src="assets/img/globe.svg"></i>
+                        <span>GMT 5:30 Kolkata</span>
+                    </div>
+                    <select id="SelExample" class="timezone_box" >
+                        <option value="0"><span class="tcode">(GMT+05:30)</span> Asia, Kolkata</option>
+                        <option value="1" selected="selected">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="2">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="3">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="4">GMT 5:30 Asia, Kolkata</option>
+
+                        <option value="5">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="6">(GMT+05:30) Asia, Kolkata</option>
+                        <option value="7">goa</option>
+
+
+
+                        <!-- <option value="1">Hyderabad</option>
+                        <option value="2">Vizag</option>
+                        <option value="3">Kochi</option>
+                        <option value="4">Anantapur</option>
+                        <option value="5">Dharmavaram</option>
+                        <option value="6">Bengaluru</option>
+                        <option value="7">Lucknow</option>
+                        <option value="8">Madurai</option> -->
+                      </select>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="event_banner_wrapper">
+            <div class="event_banner">
+                <img src="assets/img/event_banner.svg">
+            </div>
+            <div class="share_btn_box">
+                <div class="share_btn">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#sharemodal"><img src="assets/img/share.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main_content_wrapper">
+            <div class="content">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+            </div>
+
+            <div class="location_user_detail_wrap">
+                <a href="#">
+                    <i> <img src="assets/img/map.svg"></i>
+                    <span> www.google.com ( Venue )</span>
+                </a>
+                <a href="#">
+                    <i> <img src="assets/img/user.svg"></i>
+                    <span>Vishal Maske, icinfo@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <div class="add_calender_section ">
+            <h2>Add this to your Calendar</h2>
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
+                <!-- <p class="sucess_message">Thank you for participating </p> -->
+            <div class="add_calender_form">
+                <!-- <div class="fcontrol">
+                    <label class="input">
+                        <input class="input__field" type="text" placeholder=" " />
+                        <span class="input__label">Some Fancy Label</span>
+                      </label>
+                </div> -->
+
+                <div class="form_group">
+                    <div class="fcontrol">
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Name</span>
+                        </label>
+                    </div>
+                    <div class="fcontrol error_field">
+                        <label class="input ">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Email</span>
+                        </label>
+                        <span class="error_message"> Enter Email ID</span>
+                    </div>
+                    <!-- <div class="form_control">
+                              
+                                <input class="form_input">
+                                <label class="flable"> Full Name</label>
+                            </div> -->
+                    <!-- <div class="form_control">
+                               
+                                <input class="form_input">
+                                <label> Email</label>
+                            </div> -->
+                </div>
+                <div class="add_calender_btn_box">
+                    <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
+                </div>
+                <div class="logo_list">
+                    <div class="logo_list_box aplelist">
+                        <img src="assets/img/apple.svg">
+                    </div>
+                    <div class="logo_list_box goglelogolist">
+                        <img src="assets/img/google.svg">
+                    </div>
+                    <div class="logo_list_box officelogolist">
+                        <img src="assets/img/offce_365.svg">
+                    </div>
+                    <div class="logo_list_box outllist">
+                        <img src="assets/img/outlook.svg">
+                    </div>
+                    <div class="logo_list_box yglist">
+                        <img src="assets/img/yahoo.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container prim_container">
+        <div class="prime_icon_box">
+            <!-- <img src="assets/img/primeicon.svg"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                <path d="M11 21H5.6C5.03995 21 4.75992 21 4.54601 20.891C4.35785 20.7951 4.20487 20.6422 4.10899 20.454C4 20.2401 4 19.9601 4 19.4V17.6841C4 17.0485 4 16.7306 4.04798 16.4656C4.27087 15.2344 5.23442 14.2709 6.46558 14.048C6.5425 14.0341 6.6237 14.0242 6.71575 14.0172C6.94079 14 7.05331 13.9914 7.20361 14.0026C7.35983 14.0143 7.4472 14.0297 7.59797 14.0722C7.74302 14.1131 8.00429 14.2315 8.52682 14.4682C8.98953 14.6778 9.48358 14.8304 10 14.917M19.8726 15.2038C19.8044 15.2079 19.7357 15.21 19.6667 15.21C18.6422 15.21 17.7077 14.7524 17 14C16.2923 14.7524 15.3578 15.2099 14.3333 15.2099C14.2643 15.2099 14.1956 15.2078 14.1274 15.2037C14.0442 15.5853 14 15.9855 14 16.3979C14 18.6121 15.2748 20.4725 17 21C18.7252 20.4725 20 18.6121 20 16.3979C20 15.9855 19.9558 15.5853 19.8726 15.2038ZM15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z" stroke="#FEB602" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="top_content text-center">
+            <h2>Add this to your Calendar</h2>
+            <!-- <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p> -->
+        </div>
+
+        <div class="emed_code_box">
+            <div class="add_calender_btn_box add_slide_btn">
+                <button type="submit" class="add_btn"> 
+                    <i class="logoslides apple_i_slide"> <img src="assets/img/icons/apple.svg" /></i>
+                    <i class="logoslides"> <img src="assets/img/icons/google.svg" /></i> 
+                    <i class="logoslides office_i_slide"> <img src="assets/img/icons/office.svg" /></i> 
+                    <i class="logoslides outlook_i_slide"> <img src="assets/img/icons/outlook.svg" /></i> 
+                    <i class="logoslides"> <img src="assets/img/icons/yahoo.svg" /></i> 
+                    <span>Add to Calender </span>
+                </button>
+            </div>
+            <div class="powerdby_content">
+                <span> Powered by <b> Let's Calendar </b></span>
+            </div>
+            <div class="emed_btn_box">
+                <a class="componet_copy_btn emed_btn"><img src="assets/img/copy.svg" /></a>
+                <a class="code_copy_btn emed_btn" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/img/code.svg" /></a>
+            </div>
+        </div>
+
+        <div class="top_content text-center pt_30">
+            <h2>Add to Calendar button <span class="normal_style"> (for websites, landing pages) </span></h2>
+          
+        </div>
+
+        <div class="emed_code_box " id="emed_code_box">
+            <p class="sucess_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                move the email to inbox and accept the same</p>
+
+                <p class="failed_message">Calendar Invite has been sent, please check your inbox & accept the same, or check spam/junk folder and
+                    move the email to inbox and accept the same</p>
+
+
+            <div class="add_calender_section pt_0">
+                <div class="add_calender_form">
+                    <!-- <div class="fcontrol">
+                        <label class="input">
+                            <input class="input__field" type="text" placeholder=" " />
+                            <span class="input__label">Some Fancy Label</span>
+                          </label>
+                    </div> -->
+
+                    <div class="form_group">
+                        <div class="fcontrol">
+                            <label class="input">
+                                <input class="input__field" type="text" placeholder=" " />
+                                <span class="input__label">Name</span>
+                            </label>
+                        </div>
+                        <div class="fcontrol">
+                            <label class="input">
+                                <input class="input__field" type="text" placeholder=" " />
+                                <span class="input__label">Email</span>
+                            </label>
+                        </div>
+                        <!-- <div class="form_control">
+                                  
+                                    <input class="form_input">
+                                    <label class="flable"> Full Name</label>
+                                </div> -->
+                        <!-- <div class="form_control">
+                                   
+                                    <input class="form_input">
+                                    <label> Email</label>
+                                </div> -->
+                    </div>
+                    <div class="add_calender_btn_box">
+                        <button type="submit" class="add_btn"> <i></i> <span>Add to Calender </span></button>
+                    </div>
+                    <div class="logo_list">
+                        <div class="logo_list_box aplelist">
+                            <img src="assets/img/apple.svg">
+                        </div>
+                        <div class="logo_list_box goglelogolist">
+                            <img src="assets/img/google.svg">
+                        </div>
+                        <div class="logo_list_box officelogolist">
+                            <img src="assets/img/offce_365.svg">
+                        </div>
+                        <div class="logo_list_box outllist">
+                            <img src="assets/img/outlook.svg">
+                        </div>
+                        <div class="logo_list_box yglist">
+                            <img src="assets/img/yahoo.svg">
+                        </div>
+                    </div>
+                    <div class="rainbow"></div>
+
+
+
+                </div>
+            </div>
+
+            <div class="emed_btn_box">
+
+
+                <div class="componet_copy_btn emed_btn" id="copycompo" data-bs-toggle="tooltip" title="Copy Embed Code">
+                    <label class="container_box">
+                        <input type="checkbox" id="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- <a class="componet_copy_btn emed_btn" ><img src="assets/img/copy.svg" /></a> -->
+                <a class="code_copy_btn emed_btn" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/img/code.svg" /></a>
+            </div>
+
+            <svg class="animationicon" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><rect rx="8" ry="8" class="line" height="100%" width="100%" stroke-linejoin="round"></rect></svg>
+
+        </div>
+    </section>
+
+    <div class="powerdby_content fp_content">
+        <span> Powered by <b class="flogo_box"> <img src="assets/img/logo-letcalender.svg" style="width: 120px;" /> </b></span>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="sharemodal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <!-- <div class="modal-header">
+          <h4 class="modal-title">Share Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div> -->
+        <!-- Modal body -->
+        <div class="modal-body">
+            <button type="button" class="btn-close mclose_btn" data-bs-dismiss="modal"></button>
+            <div class="share_title">
+                    <h2>Share my referral link with friends</h2>
+            </div>
+            <div class="share_content_wrap">
+                <b style="
+    display: none;
+">Share my referral link with friends</b>
+                <div class="shareicon_list">
+                    <ul>
+                        <li class="whatapp_icon">
+                            <img src="assets/img/share/whatsapp.svg">
+                        </li>
+                        <li class="insta_icon">
+                            <img src="assets/img/share/instagram.svg">
+                        </li>
+                        <li class="facebook_icon">
+                            <img src="assets/img/share/facebook.svg">
+                        </li>
+                        <li class="twitter_icon">
+                            <img src="assets/img/share/twitter.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="share_form">
+                    <!-- <input class="share_input" value="https://panel.letscalendar.com/campaign"/>
+                    <button type="submit" class="btn btn_share"> Copy Link </button> -->
+                    <input class="share_input" id="shareinput" value="https://panel.letscalendar.com/campaign">
+                    <button type="submit" class="btn btn_share" id="sharebtn"> Copy Link </button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        let timer;
+
+        document.addEventListener('input', e => {
+            const el = e.target;
+
+            if (el.matches('[data-color]')) {
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    document.documentElement.style.setProperty(``,);
+                }, 100)
+            }
+        })
+    </script>
+
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("logoslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+
+$(document).ready(function(){
+ 
+
+
+
+
+ // Initialize select2
+ $("#SelExample").select2();
+ $("#SelExample").select2("val", "4");
+$('#SelExample option:selected').text('Vizag');
+ // Read selected option
+ $('#but_read').click(function(){
+   var username = $('#SelExample option:selected').text();
+   var userid = $('#SelExample').val();
+
+   $('#result').text("id : " + userid + ", name : " + username);
+ });
+
+
+
+// $('#sharebtn').click(function(){ 
+//     $("#shareinput").toggleClass("share_input_active");
+//     $(this).e.innerHTML = "Copied!"
+//  });
+
+var n = document.querySelector("#shareinput")
+var e = document.querySelector("#sharebtn")
+
+document.getElementById("sharebtn").onclick = function() { 
+    //alert('')
+    navigator.clipboard.writeText(n.value);
+    var t = e.innerHTML; 
+    n.classList.add("share_input_active");
+    e.innerHTML = "Copied!" ,
+    setTimeout((function() {
+        e.innerHTML = t, n.classList.remove("share_input_active"), n.classList.remove("text-inverse-success")
+    }), 3e3)
+};  
+
+
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
+var copycompobtn = document.querySelector("#copycompo")
+var copycomponentbox = document.querySelector("#emed_code_box")
+
+var elm = document.getElementById('checkbox');
+
+
+var tooltipbox = document.querySelector(".tooltip")
+
+document.getElementById("copycompo").onclick = function() { 
+    //alert('')
+    copycomponentbox.classList.add("copycomponent_active");
+  
+    setTimeout((function() {
+        copycomponentbox.classList.remove("copycomponent_active")
+        // if (checked != elm.checked) {
+        //     elm.click();
+        // }
+        document.getElementById("checkbox").checked = false;
+        ///document.getElementsByClassName('tooltipText').style.display="none";
+        tooltipbox.classList.remove("show")
+    }), 3e3)
+}; 
+3985
+
+});
+
+        </script>
+</body>
+
+</html>
