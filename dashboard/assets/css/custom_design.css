@@ -21,7 +21,7 @@ body{
 }
 
 .create_content_box {
-    padding-top: 112px;
+    padding-top: 86px;
 }
 .cam_image img {
     width: 156px;
@@ -32,6 +32,8 @@ body{
     padding: 6px;
     border: 1px solid #aeabab;
     border-radius: 5px;
+    height: 45px;
+    margin-right: 11px;
 }
 .create_input:focus {
     border-color: #66afe9;
@@ -140,6 +142,15 @@ h3.stepper-title {
     text-align: left;
     color: #5A5D66;
     line-height: 16.5px;
+}
+
+.radiobox_wrap {
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+}
+.fgroubox label {
+    font-weight: normal;
 }
 .tab_list_content span {
     font-size: 12px;
@@ -368,7 +379,9 @@ span.edit_icon_btn img {
 .mbtn_box {
     display: flex;
 }
-
+.mbtn_box a i {
+    line-height: 0;
+}
 .mbtn_box a i img {
     width: 15px;
 }
@@ -387,9 +400,27 @@ b.mtop_title {
     padding-bottom: 0;
     border-bottom: 0px;
 }
-
+a.frm_btn.schedule_btn {
+    background-color: #6a6b6c;
+}
+.schedule_btn:hover {
+    background-color: #959191  !important;
+}
+.send_now_btn {
+    background-color: #1B84FF;
+    margin-right: 7px;
+}
+.send_now_btn:hover {
+    background-color: #1578eb  !important;
+}
 a.frm_btn.save_btn {
     background-color: #1B84FF;
+}
+a.frm_btn.save_btn:hover {
+    background-color: #1578eb;
+}
+a.frm_btn.cancel_btn:hover {
+    background-color: #888a8c;
 }
 
 a.frm_btn {
@@ -400,7 +431,8 @@ a.frm_btn {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
+    transition: background-color 0.5s;
 }
 
 a.frm_btn.cancel_btn {
@@ -413,6 +445,7 @@ a.frm_btn.cancel_btn {
 .form_control_box label.form-label {
     padding-top: 10px;
     padding-bottom: 7px;
+    font-size: 14px;
 }
 .tab_list.tab-link.current .tab_number {
     background-color: #1B84FF;
@@ -570,6 +603,8 @@ label.form-check-label-new {padding-top: 4px;}
     background-color: #F7F7F7;
     transition: background-color 0.5s;
     margin-right: 15px;
+    position: relative;
+    cursor: pointer;
 }
 .sendcodecontent {
     width: 78%;
@@ -586,10 +621,25 @@ label.form-check-label-new {padding-top: 4px;}
 .sendcodecontent b {
     font-size: 14px;
 }
+/*schdule_tab_css_code*/
+.schedule_content_wrap {
+    display: block;
+    width: 69%;
+    margin: auto;
+}
+.schedule_content_wrap .send_code_wrap {
+    width: 100%;
+    display: inline-block;
+}
+.schedule_content_wrap .send_code_content_box {
+    width: 32%;
+    padding: 20px;
+}
+/*schedule_css_code_end*/
 
 .htmlc_rbtn {
     float: left;
-    width: 5%;
+    width: 11%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,6 +669,7 @@ label.form-check-label-new {padding-top: 4px;}
     float: left;
     padding-left: 15px;
     padding-top: 0px;
+    font-size: 14px;
 }
 
 .htmlcicon {
@@ -677,6 +728,60 @@ label.form-check-label-new {padding-top: 4px;}
     background-color: #1B84FF;
     color: #fff !important;
     cursor: pointer;
+}
+.create_cam_btn{
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-check-input2:checked[type=radio] ~ .checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #0d6efc;
+    border-radius: 50%;
+    border: 0px solid #0d6efc;
+}
+select {
+    font-size: 14px;
+}
+span.checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-check-input:checked[type=radio] ~ .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.htmlc_rbtn .form-check-input2 {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.form-check-input2:checked[type=radio] ~ .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 /*responsive_code*/

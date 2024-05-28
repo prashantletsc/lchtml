@@ -83,6 +83,11 @@
          }
       </script>
       <link rel="stylesheet" id="css-main" href="assets/css/custom_design.css">
+
+      <link rel="stylesheet" href="https://demo.pixelcave.com/oneui/assets/js/plugins/flatpickr/flatpickr.min.css">
+      <link rel="stylesheet" href="https://demo.pixelcave.com/oneui/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+
+
    </head>
    <body>
       <div id="page-container1" class=" page-header-fixed w-100" style="position: fixed; z-index:999">
@@ -339,7 +344,7 @@
                <!-- Dynamic Table with Export Buttons -->
                <div class="block">
                   <div class="content_wrap">
-                     <div class="create_campaign_wrap">
+                     <div class="create_campaign_wrap" style="width: 60%;">
                         <div class="create_content_box">
                            <div class="create_main_title">
                               Try our all new Environment with
@@ -361,7 +366,7 @@
                            </div>
                            <div class="se_content_box" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter">
                               <div class="se_icon_box">
-                                 <img src="assets/images/new/calendar.svg" />
+                                 <img src="assets/images/new/email.svg" />
                               </div>
                               <div class="se_content">
                                  <b>Email Invite</b>
@@ -370,7 +375,7 @@
                            </div>
                         </div>
                        
-                        <!-- <button type="button" class="btn btn-alt-primary push" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter">Launch Modal</button> -->
+                        <!-- <button type="button" class="btn btn-alt-primary push" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter2">Launch Modal</button> -->
                         <div class="cam_image">
                            <img src="create_cam.svg">
                         </div>
@@ -411,6 +416,140 @@
          <!-- END Main Container -->
       </div>
 
+      <div class="modal" id="modal-block-vcenter2" tabindex="-1" role="dialog" aria-labelledby="modal-block-vcenter" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="block block-rounded block-transparent mb-0">
+                  <div class="block-header block-header-default modal_title">
+                     <h3 class="block-title">
+                        <span>Design</span>
+                     </h3>
+                     <div class="modal_btn_list">
+                        <div class="mbtn_box">
+                            <a href="#"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
+                        </div>
+                     </div>
+                     <div class="block-options">
+                        <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="close_icon">
+                        <img src="assets/images/new/close.png" />
+                        </i>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="block-content fs-sm">
+                     <div class="tab_wrapper">
+                        <div class="htmlmc_title">HTML/Simple Text Editor</div>
+                        <div class="modal_htmlcode_wrap">
+                           <!--code add here-->
+                        </div>
+                        <div class="form_control_box mb-2">
+                           <div class="form_btn_box">
+                              <!-- <a href="#" class="frm_btn cancel_btn">CANCEL</a> -->
+                              <a href="#" class="frm_btn save_btn">Continue</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal" id="modal-block-vcenter3" tabindex="-1" role="dialog" aria-labelledby="modal-block-vcenter3" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="block block-rounded block-transparent mb-0">
+                  <div class="block-header block-header-default modal_title">
+                     <h3 class="block-title">
+                        <span>When would you like to send the campaign?</span>
+                     </h3>
+                     <div class="modal_btn_list">
+                        <div class="mbtn_box">
+                            <a href="#"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
+                        </div>
+                     </div>
+                     <div class="block-options">
+                        <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="close_icon">
+                        <img src="assets/images/new/close.png" />
+                        </i>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="block-content fs-sm">
+                     <div class="tab_wrapper">
+                        <!-- <div class="htmlmc_title">HTML/Simple Text Editor</div> -->
+                        <div class="schedule_content_wrap">
+                           <!--code add here-->
+
+                              <div class="tab_top_title title_bold">When would you like to send the campaign?</div>
+   
+                              <div class="send_code_wrap">
+                                 <div class="send_code_content_box hc_box_width_45">
+                                    <div class="htmlc_rbtn" style="
+   ">
+                                           <input class="form-check-input2" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+   <span class="checkmark"></span>
+                                           
+                                    </div>
+                                    <div class="sendcodecontent">
+                                       <b>Send Now</b>
+                                       <p>Copy and paste your HTML code.</p>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="send_code_content_box hc_box_width_45">
+                                    <div class="htmlc_rbtn" style="
+       display: inline-block;
+   ">
+                                           <input class="form-check-input2" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+   <span class="checkmark"></span>
+                                           
+                                    </div>
+                                    <div class="sendcodecontent">
+                                       <b>Schedule for later</b>
+                                       <p>Copy and paste your HTML code.</p>
+                                    </div>
+                                 </div>
+
+                                 <div class="send_code_content_box hc_box_width_45">
+                                    <div class="htmlc_rbtn" style="
+       display: inline-block;
+   ">
+                                           <input class="form-check-input2" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+   <span class="checkmark"></span>
+                                           
+                                    </div>
+                                    <div class="sendcodecontent">
+                                       <b>Send at best time</b>
+                                       <p>Copy and paste your HTML code.</p>
+                                    </div>
+                                 </div>
+   
+                                 
+                               </div>
+                               <div class="shedule_later_date_wrap">
+                                 <input type="text" class="js-flatpickr form-control" id="example-flatpickr-datetime" name="example-flatpickr-datetime" data-enable-time="true">
+                              </div>
+                              <form>
+                                 <div class="form_control_box mb-4">
+                                    <div class="form_btn_box">
+                                       <a href="#" class="frm_btn send_now_btn">Send</a>
+                                       <!-- <a href="#" class="frm_btn schedule_btn">Schedule</a> -->
+                                    </div>
+                                 </div>
+                              </form>
+
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
       <div class="modal" id="modal-block-vcenter" tabindex="-1" role="dialog" aria-labelledby="modal-block-vcenter" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
            <div class="modal-content">
@@ -422,8 +561,10 @@
                     </h3>
                     <div class="modal_btn_list">
                         <div class="mbtn_box">
+                           <a href="#" class="mpreview_btn" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter2" data-bs-dismiss="modal"> <i><img src="assets/images/new/preview.png"/> </i> <span>Preview</span></a>
+                           <a href="#" class="msend_btn" id="sendtest"> <i><img src="assets/images/new/send_icon.png"/> </i> <span>Send Test</span></a>
                             <a href="#" class="msave_btn"> <i><img src="assets/images/new/save.png"/> </i> <span>Save</span></a>
-                            <a href="#"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter3"  data-bs-dismiss="modal"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
                         </div>
                 </div>
                     <div class="block-options">
@@ -491,6 +632,77 @@
 		.tab-content.current{
 			display: flex;
 		}
+      /*upload_Css*/
+     .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    /* max-width: 80%; */
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 0px dotted #000;
+    /* outline: -webkit-focus-ring-color auto 5px; */
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+/* style 1 */
+
+.inputfile-1 + label {
+   display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #575757;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.25rem;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+   background-color: #f8f8f8dd;
+}
                        </style>
                        <div id="tab-1" class="tab_content tabcontent_box tab-content current">
                         <div class="tab_f_content">
@@ -499,7 +711,7 @@
                                <div class="form_control_box">
                                   <label class="form-label" for="example-email-input">Email</label>
                                   <div class="inputgroup">
-                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Emai Input">
+                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Email">
                                      <a href="#">
                                      <span></span>
                                      </a>
@@ -570,10 +782,16 @@
                               <div class="w_50">
                                   <div class="form_control_box">
                                       <label class="form-label" for="example-email-input">Attendees Upload</label>
+
                                       <div class="inputgroups">
+                                          <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                                          <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+                                       
+                                      </div>
+                                      <!-- <div class="inputgroups">
                                          <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="choose attendee file">
                                          
-                                      </div>
+                                      </div> -->
 
                                       <div class="download_btn">
                                           <a href="#">
@@ -693,7 +911,7 @@
                                <div class="form_control_box">
                                   <label class="form-label" for="example-email-input">Subject line</label>
                                   <div class="inputgroups">
-                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Emai Input">
+                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Subject Line">
                                      
                                   </div>
                                </div>
@@ -757,11 +975,8 @@
                        </div>
 
                        <div id="tab-4" class="tab_content tabcontent_box tab-content">
-                        <div class="tab_f_content">
-                           <!-- <div class="tab_top_title">Code your own</div> -->
-                           
-                           
-
+                        <div class="tab_f_content" id="designcodecontent" >
+                           <div class="tab_top_title title_bold" >Code your own</div>
                            <div class="html_code_wrap">
                              <div class="html_code_content_box hc_box_width">
                                 <div class="htmlcicon">
@@ -772,7 +987,7 @@
                                    <p>Copy and paste your HTML code.</p>
                                 </div>
                                 <div class="htmlc_btn_box">
-                                   <a href="#">Use HTML Editor</a>
+                                   <a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter2" data-bs-dismiss="modal">Use HTML Editor</a>
                                 </div>
                              </div>
 
@@ -785,7 +1000,7 @@
                                    <p>Use the rich text editor to create simple emails</p>
                                 </div>
                                 <div class="htmlc_btn_box">
-                                   <a href="#">Use HTML Editor</a>
+                                   <a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter2" data-bs-dismiss="modal">Use HTML Editor</a>
                                 </div>
                              </div>
 
@@ -800,6 +1015,41 @@
                               </div>
                            </form>
                         </div>
+
+                        <div class="tab_f_content" id="sendtestcontent" >
+                           <div class="tab_top_title title_bold">Send test emails to your colleagues</div>
+                           <div class="tab_top_title">Search your contacts by email to send them a test mailing:</div>
+                           <form>
+                              <div class="form_control_box">
+                                 <label class="form-label" for="example-email-input">Select a recipient</label>
+                                 <div class="inputgroups">
+                                    <select class="form-select" id="example-select" name="example-select">
+                                       <option selected="">Select recipient</option>
+                                       <option value="1">Option #1</option>
+                                       <option value="2">Option #2</option>
+                                       <option value="3">Option #3</option>
+                                       <option value="4">Option #4</option>
+                                       <option value="5">Option #5</option>
+                                       <option value="6">Option #6</option>
+                                       <option value="7">Option #7</option>
+                                       <option value="8">Option #8</option>
+                                       <option value="9">Option #9</option>
+                                       <option value="10">Option #10</option>
+                                     </select>
+<!--                                         
+                                      <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="select campaign">
+                                       -->
+                                   </div>
+                              </div>
+                              <div class="form_control_box">
+                                 <div class="form_btn_box">
+                                    <a href="#" class="frm_btn save_btn">Send</a>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+
+
                           <div class="message_box_wrap">
                             <div class="message_box_conentwrap">
                                 <b class="mtop_title"> INBOX</b>
@@ -856,17 +1106,24 @@
 
                            <div class="send_code_wrap">
                               <div class="send_code_content_box hc_box_width_45">
-                                 <div class="htmlc_rbtn">
-                                        <input class="form-check-input" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+                                 <div class="htmlc_rbtn" style="
+">
+                                        <input class="form-check-input2" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+<span class="checkmark"></span>
                                         
                                  </div>
                                  <div class="sendcodecontent">
                                     <b>Send Now</b>
                                     <p>Copy and paste your HTML code.</p>
                                  </div>
-                              </div><div class="send_code_content_box hc_box_width_45">
-                                 <div class="htmlc_rbtn">
-                                        <input class="form-check-input" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+                              </div>
+                              
+                              <div class="send_code_content_box hc_box_width_45">
+                                 <div class="htmlc_rbtn" style="
+    display: inline-block;
+">
+                                        <input class="form-check-input2" type="radio" id="example-radios-inline1" name="example-radios-inline" value="option1">
+<span class="checkmark"></span>
                                         
                                  </div>
                                  <div class="sendcodecontent">
@@ -874,16 +1131,17 @@
                                     <p>Copy and paste your HTML code.</p>
                                  </div>
                               </div>
- 
+
                               
- 
- 
                             </div>
+                            <div class="shedule_later_date_wrap">
+                              <input type="text" class="js-flatpickr form-control" id="example-flatpickr-datetime" name="example-flatpickr-datetime" data-enable-time="true">
+                           </div>
                            <form>
                               <div class="form_control_box">
                                  <div class="form_btn_box">
-                                    <a href="#" class="frm_btn cancel_btn">CANCEL</a>
-                                    <a href="#" class="frm_btn save_btn">SAVE</a>
+                                    <a href="#" class="frm_btn send_now_btn">Send Now</a>
+                                    <a href="#" class="frm_btn schedule_btn">Schedule</a>
                                  </div>
                               </div>
                            </form>
@@ -1140,11 +1398,26 @@ $(document).ready(function(){
       <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.min.js"></script>
       <script src="https://panel.letscalendar.com/js/plugins/summernote/summernote-bs4.min.js"></script>
       <script>const SiteUrl = "https://panel.letscalendar.com";</script>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
       <script>
          function submitManageBilling(){
              $('#mngBilling').submit();
          }
+         $("#sendtestcontent").hide();
+         $("#sendtest").click(function(){
+            $("p").toggleClass("main");
+            $("#designcodecontent").hide();
+            $("#sendtestcontent").show();
+         });
+
+         $("[data-tab='tab-4']").click(function(){
+            $("p").toggleClass("main");
+            $("#designcodecontent").show();
+            $("#sendtestcontent").hide();
+         });
+
+         
       </script>
       <script>
          po('customers',
@@ -1160,5 +1433,8 @@ $(document).ready(function(){
      
 
       </script>
+      
+		<script src="https://tympanus.net/Tutorials/CustomFileInputs/js/custom-file-input.js"></script>
+
    </body>
 </html>
