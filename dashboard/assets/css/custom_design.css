@@ -1074,7 +1074,7 @@ top: 29px;
 font-size: 12px;
 }
 .form_control_box label.form-label {
-font-size: 12px;
+/* font-size: 12px; */
 }
 .form-select {
 font-size: 12px;
@@ -1141,12 +1141,12 @@ width: 100%;
 width: 100%;
 }
 .sendcodecontent b {
-font-size: 12px;
+/* font-size: 12px; */
 }
 
 /*tab_send_test_code*/
 .tab_top_title {
-font-size: 12px;
+/* font-size: 12px; */
 }
 }
 
