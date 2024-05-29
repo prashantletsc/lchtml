@@ -854,8 +854,8 @@ span.checkmark {
     padding-top: 17px;
   }
   .mbtn_box a {
-    width: 120px;
-    font-size: 12px;
+    /* width: 120px;
+    font-size: 12px; */
     float: left;
     margin-bottom: 11px;
     padding: 8px;
@@ -1036,11 +1036,11 @@ display: inline-block;
 padding-top: 17px;
 }
 .mbtn_box a {
-width: 110px;
-font-size: 12px;
-float: left;
-margin-bottom: 11px;
-padding: 8px;
+    width: 112px;
+    font-size: 12px;
+    float: left;
+    margin-bottom: 11px;
+    padding: 8px;
 }
 .block-header.block-header-default.modal_title .btn-block-option {
 position: absolute;
