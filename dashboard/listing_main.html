@@ -98,8 +98,6 @@
                 });
             }
         </script>
-
-        <link rel="stylesheet" id="css-main" href="assets/css/custom_design.css">
     </head>
     <body>
         <div id="page-container1" class=" page-header-fixed w-100" style="position: fixed; z-index:999">
@@ -371,36 +369,273 @@
 
             <!-- Main Container -->
             <main id="main-container" style="">
+                <div class="bg-body-light">
+  <div class="content content-full">
+    <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center py-2">
+      <div class="flex-grow-1">
+      <h1 class="page-title">
+          Campain List
+      </h1>
+      <h2 class="fs-base lh-base fw-medium text-muted mb-0">
+        This page is to create and configure campaigns
+      </h2>
+    </div>
+    </div>
+  </div>
+</div>
     <!-- Page Content -->
     <div class="content">
       <!-- <div class="content"> -->
           <!-- Dynamic Table with Export Buttons -->
           <div class="block">
-            <div class="content_wrap">
-                <div class="create_campaign_wrap">
-                    <div class="create_content_box">
-                        <div class="create_main_title">
-                            Try our all new Environment with
-                            Pro Plan for free
-                        </div>
-                        <p>Keep subscribers enagaged by sharing your latest news, promoting your
-                            bestselling products, or annoucing an upcoming event.</p>
+                                        
+            <div class="col-md-12 d-inline-block">
+              <div class="align-items-start">
+                <div class="float-lg-left">
+                  <div class="block-header pl-0">
+                    <a href="/campaign" class="btn btn-primary js-click-ripple-enabled">
+                      <span>
+                        <i class="fa fa-plus mr-1" aria-hidden="true"></i>
+                      </span>
+                      <span class="label">
+                        New Campaign
+                      </span>  
+                    </a>
+                  </div>
+                </div>
+                <div class="float-lg-right col-lg-5 pr-0">
+                  <form id="searchForm" class="my-2" action="https://panel.letscalendar.com/camplist" method="GET">
+                    <div class="input-group position-relative search-group">
+                        <input type="text" name="search" id="search" class="form-control" placeholder="Search..." value="">
+                        <button type="button" id="clearSearch" class="btn btn-outline-light input-group-text position-absolute">&times;</button>
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
                     </div>
-                    <form>
-                        <input class="create_input">
-                        <a href="select_invite.html" class="btn btn-primary btn_style create_cam_btn"> Create campaign </a>
-                    </form>
-                    <div class="cam_image">
-                        <img src="assets/images/new/create_cam.svg">
+                  </form>                
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-12 pb-3">
+
+                  <!-- DataTables init on table by adding .js-dataTable-buttons class, functionality is initialized in js/pages/be_tables_datatables.min.js which was auto compiled from _es6/pages/be_tables_datatables.js -->
+                  <table class="table table-bordered table-responsive table-striped table-vcenter">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Create Date</th>
+                          <th class="d-sm-table-cell" style="width: 20%;">Campaign Name</th>
+                          <!--<th class="d-sm-table-cell" style="width: 25%;">Subject</th>-->
+                          <th class="d-sm-table-cell" style="width: 15%;">Time Zone</th>
+                          <th class="d-sm-table-cell" style="width: 15%;">Start Date</th>
+                          <th class="d-sm-table-cell" style="width: 15%;">End Date</th>
+                          <th class="d-sm-table-cell" style="width: 10%;">Status</th>
+                          <th class="d-sm-table-cell" style="width: 15%;">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                  <tr>
+                                                      <td class="ont-w600 font-size-sm">
+                              <!--moving button-->
+                              2024-04-15 05:52:48
+                            </td> 
+                            <td class="font-size-sm">
+                              <buttpm class="btn-link tooltip-enabled text-dark font-w600 " onclick="copyUniqueId('wRhs96umhkT8tJteIcw1')">
+                                <span class="tooltip">
+                                wRhs96umhkT8tJteIcw1
+                                </span>
+                                Dev Meeting
+                              </button>
+                            </td>
+                            <!--<td class="font-w600 font-size-sm"> Design and Dev discussion </a> </td>-->
+                            <td class="font-w600 font-size-sm"> Asia/Kolkata </a> </td>
+                            <td class="font-w600 font-size-sm"> 2024-04-15 12:00:00 </a> </td>
+                            <td class="font-w600 font-size-sm"> 2024-04-15 13:00:00 </a> </td>
+                            <td class="d-sm-table-cell">
+                                                                                                      <span class="badge badge-primary"> Archived </span>
+                                                                                              </td>
+                            <td class="font-w600 font-size-sm">
+                              <!--moving button-->
+                              <div class="btn-group">
+                             
+                                <a class="btn btn-sm btn-alt-secondary tooltip-enabled" href="https://panel.letscalendar.com/sendinvite/wRhs96umhkT8tJteIcw1" data-placement="top" title="Send invite"> 
+                                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                              </a>
+                                                            <a class="btn btn-sm btn-alt-secondary tooltip-enabled" href="https://panel.letscalendar.com/campcopy/wRhs96umhkT8tJteIcw1" data-placement="top" title="Duplicate"> 
+                                  <i class="fa fa-fw fa-clone fa-x"></i>
+                              </a>
+                            
+                                  <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">Delete</button> -->
+                              
+                              <!--end delete-->
+                              
+                              </div>
+                            </td>
+                          </tr>
+                                                </tbody>
+                  </table>
+                                      
+                   
+                  
+              </div>
+          </div>
+          <!-- END Dynamic Table with Export Buttons -->
+        <!-- </div> -->
+
+    </div>
+    <!-- END Page Content -->
+
+<div id="modalDelete" class="modal fade">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="block block-themed">
+  <div class="block-header bg-success">
+      <h3 class="block-title">Delete Campaign</h3>
+  </div>
+  <div class="block-content">
+    <div class=" form-group row">
+        <div class="col-sm-12 col-lg-12">
+            <div class="block block-rounded block-link-hover3 text-center">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                    <label id="title"> </label>
                     </div>
                 </div>
-           </div>
-          </div>
-    </div>
+                <div class="h5 text-muted text-uppercase push-5-t">Are you sure you want to delete attendees of this Campaign?</div>
 
-<style>
- 
-</style>
+                <form method="POST" action="https://panel.letscalendar.com/campdelete" accept-charset="UTF-8"><input name="_token" type="hidden" value="uu9quIkj0wSqxxOF1VAMWzuSG4wkBtcE2s6R8cmn">
+                <input id="campdeleteid" name="campdeleteid" type="hidden" value="">
+                    <button type="button" class="btn btn-danger" data-toggle="modal"  data-target="#modalDelete"> Cancel </button>
+                    <button type="submit" class="btn btn-success" data-toggle="modal"  data-target="#modalDelete"> Delete </button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="modalInfo">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-center" id="cName">Webinar</h3>
+      </div>
+      <div class="modal-body">
+      <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+               Campaign ID
+              </label>
+              <div class="col-sm-6" id="c_uId">
+                klZ62TEiBgPOHawTSC68
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              Subject
+              </label>
+              <div class="col-sm-6" id="cSubject">
+                Re: Webinar on online marketing
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+                  Date and Time of creation
+              </label>
+              <div class="col-sm-6" id="c_create_date">
+                2024-02-02 04:24:59	
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              Start date and Time
+              </label>
+              <div class="col-sm-6" id="c_startDate">
+                2024-02-09 12:00:00	
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              End date and Time
+              </label>
+              <div class="col-sm-6" id="c_endDate">
+              2024-02-16 12:00:00	
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              Status
+              </label>
+              <div class="col-sm-6">
+                <span class="badge badge-success" id="c_status"> Active </span>
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+                Sender email
+              </label>
+              <div class="col-sm-6" id="c_deEmail">
+                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dbafbea8af9bbcb6bab2b7f5b8b4b6">[email&#160;protected]</a>
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              Event type
+              </label>
+              <div class="col-sm-6" id="c_type">
+                Webinar
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+                Calendar Description
+              </label>
+              <div class="col-sm-6" id="cDesc">
+                  This event has been created to host a webinar on online marketing.
+              </div>
+              </div>
+        </div>
+        <div class="form-group">
+              <div class="row">
+              <label class="col-sm-4 col-form-label">
+              Email Body
+              </label>
+              <div class="col-sm-8 description">
+                <div class="description-detail short position-relative" id="c_body">
+                  This event has been created to host a webinar on online marketing. This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.This event has been created to host a webinar on online marketing.
+                  <span class="view-more">
+                    View All
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                  </span>
+                </div>
+                
+              </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-lg btn-primary closeModal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
     $(function () {
     $(".tooltip-enabled").tooltip();
