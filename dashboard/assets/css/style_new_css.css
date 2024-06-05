@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body.registration{
+    /* background: #062D92; */
+    background: #212226 !important;
+    font-size: 16px;
+    font-family: "Inter", sans-serif !important;
+  }
+
+  .text-black {
+    color: #212226;
+}
+.registration-banner {
+    display: none;
+}
+form.js-validation-signin {
+    margin-top: 42px;
+}
+.registration header .logo img {
+    width: 169px;
+}
+.register-title {
+    font-size: 26px;
+}
+.login-panel .login-form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.register-step-2 {
+    max-width: 96%;
+    margin: 0 auto;
+}
+span.bg-white.or_txt_title {
+    color: #8e8e8e;
+}
+.registration .cloud-bg {
+    background: url(../images/new/cloud-bg.svg) bottom no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+.reg-screen-title p {
+    margin-top: 30px;
+}
+.registration-panel {
+    overflow: hidden;
+    background: #0F1014;
+    margin-top: 28px;
+}
+.login-panel.d-flex.reset_wrap_banner {
+    margin-top: 28px;
+}
+.form-control {
+    border: #313131 solid 1px;
+    background: transparent;
+}
+.field-group .field-initial {
+    display: none;
+}
+.form-label {
+    color: #d2d2d2;
+}
+.logolist{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.registration-panel .btn-login, .registration-panel .btn-register, .login-panel .btn-register {
+    background: #006AE6;
+    color: #fff;
+    font-family: "Inter", sans-serif !important;
+}
+.btn-block {
+    font-family: "Inter", sans-serif !important;
+    font-size: 16px;
+}
+
+.registration-panel h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.registration-panel .register-step .form-control::placeholder{
+    color: #898989;
+}
+label.control-label.remember_title {
+    color: #969696;
+}
+.dont_account_para {
+    color: #cfcfcf;
+}
+button.btn.btn-block.btn-register {
+    margin-bottom: 16px;
+}
+.registration-banner {
+    display: none;
+}
+.btn-block {
+    border: #006AE6 solid 1px;
+}
+.text-center.font-normal.py-1.logolisttitle {
+    color: #fff;
+}
+.text-center.font-normal.py-1.logolisttitle {
+    color: #fff;
+}
+.row-justify.header-row.reg-screen-title {
+    margin-bottom: 22px;
+    color: #c9c9c9;
+}
+.row-justify.header-row.reg-screen-title h2.text-blue {
+    color: #fff;
+    margin-top: 31px;
+}
+.login-form .login-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+a {
+    color: #006AE6;
+}
+.login-panel {
+    overflow: hidden;
+    background: #0F1014;
+}
+.login-panel .login-form .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.login-form .login-title {
+    color: #fff;
+}
+
+.registration-panel .behifits {
+    background: #0F1014;
+    color: #cecece;
+}
+.btn-google:hover, .btn-microsoft:hover {
+    background: transparent !important;
+}
+.btn-google, .btn-microsoft {
+    background: transparent;
+    transition: all .3s;
+    color: #f1ebeb !important;
+    font-size: 14px;
+    border: 1px solid #2E303A !important;
+}
+
+.btn-block img {
+    max-width: 16px;
+    margin-right: 5px;
+}
+.dont_account_para {
+    color: #cfcfcf;
+    font-size: 14px;
+}
