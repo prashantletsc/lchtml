@@ -86,6 +86,7 @@
       <link rel="stylesheet" id="css-main" media="all" href="assets/css/responsive_css.css">
       <link rel="stylesheet" href="https://demo.pixelcave.com/oneui/assets/js/plugins/flatpickr/flatpickr.min.css">
       <link rel="stylesheet" href="https://demo.pixelcave.com/oneui/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
    </head>
@@ -355,7 +356,7 @@
                            </p>
                         </div>
                         <div class="select_event_content_wrap">
-                           <div class="se_content_box" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter">
+                           <div class="se_content_box" data-bs-toggle="modal" data-bs-target="#calendarview">
                               <div class="se_icon_box">
                                  <img src="assets/images/new/calendar.svg" />
                               </div>
@@ -1181,6 +1182,612 @@
         </div>
      </div>
 
+     <div class="modal" id="calendarview" tabindex="-1" role="dialog" aria-labelledby="modal-block-vcenter" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+
+          
+      
+
+
+            <div class="block block-rounded block-transparent mb-0" >
+               <div class="block-header block-header-default modal_title">
+                  <h3 class="block-title">
+                     <span>Create an calendar campaign</span>
+                     <span class="edit_icon_btn"> <img src="assets/images/new/edit.png" /></span>
+                  </h3>
+                  <div class="modal_btn_list">
+                      <div class="mbtn_box">
+                         <a href="#" class="mpreview_btn" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter2" data-bs-dismiss="modal"> <i><img src="assets/images/new/preview_1.png"/> </i> <span>Preview</span></a>
+                         <a href="#" class="msend_btn" id="sendtest"> <i><img src="assets/images/new/send_icon.png"/> </i> <span>Send Test</span></a>
+                          <a href="#" class="msave_btn"> <i><img src="assets/images/new/save.png"/> </i> <span>Save</span></a>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-vcenter3"  data-bs-dismiss="modal" style="display: none;"> <i><img src="assets/images/new/calendar_icon.png"/> </i> <span>Schedule</span></a>
+                      </div>
+              </div>
+                  <div class="block-options">
+                     <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                     <i class="close_icon">
+                     <img src="assets/images/new/close.png" />
+                     </i>
+                     </button>
+                  </div>
+               </div>
+               <div class="block-content fs-sm">
+
+
+
+                
+
+                
+                  <div class="tab_wrapper" >
+                     <div class="side_tab tabs">
+                        <div class="tab_list tab-link current" data-tab="tab-11">
+                           <div class="tab_number">
+                              <span>1</span>
+                           </div>
+                           <div class="tab_list_content">
+                              <h3 class="stepper-title">Sender Details</h3>
+                              <span>Setup Your Account Details</span>
+                           </div>
+                        </div>
+                        <div class="tab_list tab-link" data-tab="tab-22">
+                           <div class="tab_number">
+                              <span>2</span>
+                           </div>
+                           <div class="tab_list_content">
+                              <h3 class="stepper-title">Event Details</h3>
+                              <span>Setup Your Account Details</span>
+                           </div>
+                        </div>
+                        <div class="tab_list tab-link"  data-tab="tab-33">
+                           <div class="tab_number">
+                              <span>3</span>
+                           </div>
+                           <div class="tab_list_content">
+                              <h3 class="stepper-title">Campaign Subject</h3>
+                              <span>Setup Your Account Details</span>
+                           </div>
+                        </div>
+                        <div class="tab_list tab-link"  data-tab="tab-44">
+                           <div class="tab_number">
+                              <span>4</span>
+                           </div>
+                           <div class="tab_list_content">
+                              <h3 class="stepper-title">Calendar Description</h3>
+                              <span>Setup Your Account Details</span>
+                           </div>
+                        </div>
+
+                        <div class="tab_list tab-link"  data-tab="tab-55">
+                         <div class="tab_number">
+                            <span>5</span>
+                         </div>
+                         <div class="tab_list_content">
+                            <h3 class="stepper-title">Additional details</h3>
+                            <span>Setup Your Account Details</span>
+                         </div>
+                      </div>
+
+
+                        <div class="tab_list tab-link"  data-tab="tab-66">
+                           <div class="tab_number">
+                              <span>6</span>
+                           </div>
+                           <div class="tab_list_content">
+                              <h3 class="stepper-title">Send or schedule</h3>
+                              <span>Setup Your Account Details</span>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div id="tab-11" class="tab_content tabcontent_box tab-content current">
+                      <div class="tab_f_content">
+                          <div class="tab_top_title">Who is sending this email campaign?</div>
+
+
+                          <form>
+                             <!-- <div class="form_control_box">
+                                <label class="form-label" for="example-email-input">Email</label>
+                                <div class="inputgroup">
+                                   <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Email">
+                                   <a href="#">
+                                   <span></span>
+                                   </a>
+                                </div>
+                             </div> -->
+                             <div class="form_control_box">
+                               <label class="form-label" for="example-email-input">Email</label>
+                               <div class="inputgroup ">
+                                  <div class="inputslectbox">
+                                     <select class="form-control select2" id="mySelect3">
+                                        <option>Select Email</option> 
+                                        <option>Car</option> 
+                                        <option>Bike</option> 
+                                        <option>Scooter</option> 
+                                        <option>Cycle</option> 
+                                        <option>Horse</option> 
+                                     </select>
+                                  </div>
+                                  <!-- <input type="text" class="form-control m-input"> -->
+                                     
+                                  
+                                  <a id="rowAdder" href="#" class="">
+                                     <span></span>
+                                  </a>
+                              </div>
+                                 <div id="newinput" class="inputgroup">
+
+                                 </div>
+                                 
+                            </div>                
+
+
+                             <div class="form_control_box">
+                                <div class="form_btn_box">
+                                   <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                   <a href="#" class="frm_btn save_btn">SAVE</a>
+                                </div>
+                             </div>
+                          </form>
+                       </div>
+                        <div class="message_box_wrap">
+                          <div class="message_box_conentwrap">
+                              <b class="mtop_title"> INBOX</b>
+                            <div class="message_content_box">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box  message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="message_popup_box">
+                              <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                          </div>
+                         </div>
+
+                        
+                     </div>
+                     <div id="tab-22" class="tab_content tabcontent_box tab-content ">
+                      <div class="tab_f_content_full w_90">
+                         <div class="tab_top_title">Add a subject line for this campaign.</div>
+                         <form>
+                            <div class="w_45 forncontrol_content_box">
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Select Event Type</label>
+                                  <div class="inputgroups">
+                                     <select name="cars" class="form-control" id="cars">
+                                        <option value="webinar">Webinar</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                      </select>
+<!-- 
+                                     <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Subject Line">                                     -->
+                                  </div>
+                               </div>
+                               
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Event Start Date & Time</label>
+                                  <div class="inputgroups">
+                                     <input type="date" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Subject Line">
+                                  </div>
+                               </div>
+                               
+                            </div>
+                            <div class="w_45  forncontrol_content_box frmright_box">
+
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Time Zone</label>
+                                  <div class="inputgroups">
+                                     <select class="form-control select2" id="mySelect4">
+                                        <option>Select Time Zone</option> 
+                                        <option>GMT London</option> 
+                                        <option>Bike</option> 
+                                        <option>Scooter</option> 
+                                        <option>Cycle</option> 
+                                        <option>Horse</option> 
+                                     </select>
+                                  </div>
+                               </div>
+ 
+                               <div class="form_control_box">
+                                  <label class="form-label" for="example-email-input">Event End Date & Time</label>
+                                  <div class="inputgroups">
+                                     <input type="date" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Subject Line">
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="form_control_box">
+                               <div class="form_btn_box">
+                                  <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                  <a href="#" class="frm_btn save_btn">SAVE</a>
+                               </div>
+                            </div>
+                         </form>
+                      </div>
+                     </div>
+                     <div id="tab-33" class="tab_content tabcontent_box tab-content">
+                      <div class="tab_f_content">
+                          <div class="tab_top_title">Add a subject line for this campaign.</div>
+                          <form>
+                             <div class="form_control_box">
+                                <label class="form-label" for="example-email-input">Subject line</label>
+                                <div class="inputgroups">
+                                   <input type="email" class="form-control" id="example-email-input" name="example-email-input" placeholder="Enter Subject Line">
+                                   
+                                </div>
+                             </div>
+                             <div class="form_control_box">
+                                <div class="form_btn_box">
+                                   <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                   <a href="#" class="frm_btn save_btn">SAVE</a>
+                                </div>
+                             </div>
+                          </form>
+                       </div>
+                        <div class="message_box_wrap">
+                          <div class="message_box_conentwrap">
+                              <b class="mtop_title"> INBOX</b>
+                            <div class="message_content_box">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box  message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="message_popup_box">
+                              <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                          </div>
+                         </div>
+
+                        
+                     </div>
+                    
+                     <div id="tab-44" class="tab_content tabcontent_box tab-content">
+                      <div class="tab_f_content_full discription_content" id="designcodecontent" >
+                         <div class="tab_top_title title_bold" >Calendar Invite Description</div>
+                         <div class="html_code_wrap">
+                           <div class="textarea_wrap">
+                            <textarea class="form-control" id="example-textarea-input" name="example-textarea-input" rows="4" placeholder="Textarea content.."></textarea>
+
+                            <span class="textarea_list"> Maximum 1500 characters allowed </span>
+                           </div>
+                         </div>
+                         
+                         <div class="html_code_wrap summarnote_content">
+                            <label class="form-label" for="example-email-input">Email Body</label>
+                            <div class="summernote2"></div>
+                         </div>
+                         <form>
+                            <div class="form_control_box">
+                               <div class="form_btn_box">
+                                  <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                  <a href="#" class="frm_btn save_btn">SAVE</a>
+                               </div>
+                            </div>
+                         </form>
+                      </div>      
+                     </div>
+
+                     
+                     <div id="tab-55" class="tab_content tabcontent_box tab-content">
+                      <div class="tab_f_content" id="designcodecontents" >
+                         <div class="tab_top_title title_bold" >Additional details</div>
+                         <div class="html_code_wrap">
+
+                            <div class="">
+                               <div class="wallet_content_wrap">
+                                  <div class="input-group mb-0 mt-1 inputmgroup walletbox custom_file_box" style="border: 0px;">
+                                      <div class="filewrapper">
+                                          <div class="switch-custom">
+                                              <div class="form-check form-switch formswitchwrap fswrap">
+                                                  <input class="form-check-input googleswitchbtn" type="checkbox" role="switch" id="enableGoogleWallet" name="googleWalletValue">
+                                                  <label class="control-labael namel googlewalletlable">
+                                                      <span> hello</span>
+                                                      <img src="assets/images/new/Google_Wallet_icon.svg.png">
+                                                  </label>
+                                              </div>
+                                              <div class="infobox" style="display:none;">
+                                                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                              </div>
+                                          </div>
+      
+                                          
+                                      </div>
+                                  </div>
+      
+                                  <div class="brand_content_wrap" id="extra_wallet_field" style="display: none;">
+                                      <div class="form-group row">
+                                          <div class="col-sm-12 control_group">
+                                              <label class="control-labael">Brand name</label>
+                                              <input class="form-control form-control-user" id="b_name" placeholder="Enter Brand Name" name="b_name" type="text" value="design">
+                                          </div>
+                                      </div>
+                                      <div class="input-group mb-0 mt-1 inputmgroup custom_file_box" style="border: 0px;">
+                                          <div class="custom_file">
+                                              <label class="control-labael">Brand Logo</label>
+                                              <div class="custombtn box ">
+                                                  <input type="file" accept="image/png, image/jpeg" name="b_logo" id="file-2" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="">
+                                                  <label for="file-2">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                                          <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path>
+                                                      </svg>
+                                                      <span>Upload File…</span>
+                                                  </label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                                                  </div>
+      
+                              </div>
+
+                              <div class="input-group mb-0 mt-1 inputmgroup" style="border: 0px;">
+                               <div class="switch-custom">
+                                   <div class="form-check form-switch formswitchwrap fswrap add_tocalender">
+                                       <input class="form-check-input heroImageBtn" name="addToCalendar" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                       <label class="control-labael">Add to Calendar Widget (for Landing Pages and
+                                           Emails)</label>
+                                     <span class="infobox js-tooltip-enabled" style="padding-left: 0;margin-top: 2px;" data-toggle="tooltip" aria-label="Hooray!" data-bs-original-title="Hooray!">
+                                     <i class="fa fa-info-circle"></i>
+                                     </span>
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="input-group mb-0 mt-2 inputmgroup2  custom_file_box" id="brand_footer" style="border: 0px; display: none;">
+                            <div class="custom_file">
+                                <label class="control-labael">Hero Image
+
+                                    <span class="infobox js-tooltip-enabled" style="padding-left: 0;" data-toggle="tooltip" aria-label="Hooray!" data-bs-original-title="Hooray!">
+                                    <i class="fa fa-info-circle"></i>
+                                    </span>
+
+                                </label>
+                                <div class="custombtn box ">
+                                    <input type="file" name="b_footer" accept="image/png, image/jpeg" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="">
+                                    <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                            <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path>
+                                        </svg> <span>Upload File…</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            </div>
+
+                         </div>
+                         <form>
+                            <div class="form_control_box">
+                               <div class="form_btn_box">
+                                  <a href="#" class="frm_btn cancel_btn">CANCEL</a>
+                                  <a href="#" class="frm_btn save_btn">SAVE</a>
+                               </div>
+                            </div>
+                         </form>
+                      </div>
+
+                        <div class="message_box_wrap">
+                          <div class="message_box_conentwrap">
+                              <b class="mtop_title"> INBOX</b>
+                            <div class="message_content_box">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box  message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="message_popup_box">
+                              <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                          </div>
+                         </div>
+
+                        
+                     </div>
+
+                     
+
+                     <div id="tab-66" class="tab_content tabcontent_box tab-content">
+                      <div class="tab_f_content">
+                         <div class="tab_top_title title_bold">Send test email</div>
+
+                         <div class="send_code_wrap">
+                            <div class="send_code_content_box hc_box_width_45">
+                               <div class="htmlc_rbtn" style="
+">
+                               <input class="form-check-input2" type="radio" id="sendnowradio_btn" name="shedulelater" value="option2">
+<span class="checkmark"></span>
+                                      
+                               </div>
+                               <div class="sendcodecontent">
+                                  <b>Send Now</b>
+                                  <p>Copy and paste your HTML code.</p>
+                               </div>
+                            </div>
+                            
+                            <div class="send_code_content_box hc_box_width_45">
+                               <div class="htmlc_rbtn">
+                                      <input class="form-check-input2" type="radio" id="shedulelater" name="shedulelater" value="option2">
+<span class="checkmark"></span>
+                                      
+                               </div>
+                               <div class="sendcodecontent">
+                                  <b>Schedule for later</b>
+                                  <p>Copy and paste your HTML code.</p>
+                               </div>
+                            </div>
+
+                            
+                          </div>
+                          <div class="shedule_later_date_wrap" style="display: none;">
+                            <!-- <input type="text" class="js-flatpickr form-control" id="example-flatpickr-datetime" name="example-flatpickr-datetime" data-enable-time="true"> -->
+                            <input type="date" class="form-control" id="" name="data">
+                         </div>
+                         <form>
+                            <div class="form_control_box">
+                               <div class="form_btn_box">
+                                  <a href="#" class="frm_btn send_now_btn">Send Now</a>
+                                  <a href="#" class="frm_btn schedule_btn">Schedule</a>
+                               </div>
+                            </div>
+                         </form>
+                      </div>
+                        <div class="message_box_wrap">
+                          <div class="message_box_conentwrap">
+                              <b class="mtop_title"> INBOX</b>
+                            <div class="message_content_box">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="message_content_box  message_blur">
+                               <div class="message_user_namebox"><span>C</span></div>
+                               <div class="message_content">
+                                  <div class="messagec_box">
+                                     <h3>Let's Calender</h3>
+                                     <b>Message subject...</b>
+                                     <p>Your preview text</p>
+                                     <div class="message_time">
+                                        <span>05:20 PM</span>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="message_popup_box">
+                              <a href="#"><img src="assets/images/new/message_popup_box.png"></a>
+                          </div>
+                         </div>
+
+                        
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
 
 
       <!-- END Page Container -->
@@ -1428,6 +2035,10 @@ $(document).ready(function(){
             $('.summernote').summernote({
                height: 330,   //set editable area's height
             });
+
+            $('.summernote2').summernote({
+               height: 230,   //set editable area's height
+            });
             // $('input[type="radio"]').change(function(){
             //       if($("input[name='shedulelater']:checked")){
             //       $('.shedule_later_date_wrap').show();
@@ -1448,6 +2059,10 @@ $(document).ready(function(){
             });
 
             $('#mySelect3').select2({
+               dropdownParent: $('#modal-block-vcenter')
+            });
+
+            $('#mySelect4').select2({
                dropdownParent: $('#modal-block-vcenter')
             });
 
