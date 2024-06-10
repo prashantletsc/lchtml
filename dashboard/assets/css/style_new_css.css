@@ -47,8 +47,18 @@ span.bg-white.or_txt_title {
     background: #0F1014;
     margin-top: 28px;
 }
+i.fa.fa-envelope {
+    color: #ddd;
+    margin-right: 5px;
+}
 .login-panel.d-flex.reset_wrap_banner {
     margin-top: 28px;
+}
+.text-center.font-normal.py-1.logolisttitle {
+    display: none;
+}
+.row.mx-auto.justify-content-sm-center.logolist {
+    display: none;
 }
 .form-control {
     border: #313131 solid 1px;
