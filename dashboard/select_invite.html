@@ -1299,7 +1299,7 @@
                                <label class="form-label" for="example-email-input">Email</label>
                                <div class="inputgroup ">
                                   <div class="inputslectbox">
-                                     <select class="form-control select2" id="mySelect3">
+                                     <select class="form-control select2" id="mySelect33">
                                         <option>Select Email</option> 
                                         <option>Car</option> 
                                         <option>Bike</option> 
@@ -2062,10 +2062,50 @@ $(document).ready(function(){
                dropdownParent: $('#modal-block-vcenter')
             });
 
-            $('#mySelect4').select2({
-               dropdownParent: $('#modal-block-vcenter')
+
+            $('#mySelect22').select2({
+               dropdownParent: $('#calendarview')
             });
 
+            $('#mySelect33').select2({
+               dropdownParent: $('#calendarview')
+            });
+
+            $('#mySelect4').select2({
+               dropdownParent: $('#calendarview')
+            });
+
+
+            
+
+            $('.googleswitchbtn, .appleswitchbtn').click(function() {
+
+var isGoogleWallet = $('.googleswitchbtn').prop('checked');
+var isAppleWallet = $('.appleswitchbtn').prop('checked');
+var extraFields = document.getElementById('extra_wallet_field');
+// var heroImage = document.getElementById('brand_footer');
+if(isGoogleWallet || isAppleWallet) {
+    extraFields.style.display = 'block';
+    // heroImage.style.display = 'block';
+}else{
+    extraFields.style.display = 'none';
+    // heroImage.style.display = 'none';
+}
+});
+
+$('.heroImageBtn, .googleswitchbtn, .appleswitchbtn').click(function() {
+var isGoogleWallet = $('.googleswitchbtn').prop('checked');
+var isAppleWallet = $('.appleswitchbtn').prop('checked');
+var isAddCalendar = $('.heroImageBtn').prop('checked');
+var heroImage = document.getElementById('brand_footer');
+
+if(isGoogleWallet || isAddCalendar || isAppleWallet){
+    heroImage.style.display = 'block';
+}else{
+    heroImage.style.display = 'none';
+}
+
+})
 
          });
       </script>
